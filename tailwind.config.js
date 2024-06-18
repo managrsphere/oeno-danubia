@@ -7,8 +7,8 @@ export default {
           "primary": "#0A0000",
           "secondary": "#882244",
           "accent": "#cfa834",
-          "neutral": "#f1f2f3",
-          "base-100": "#f5f5f4",
+          "neutral": "#f5f5f4",
+          "base-100": "#f1f2f3",
           "info": "#64caa0",
           "success": "#70bf2c",
           "warning": "#fbbf24",
@@ -18,6 +18,7 @@ export default {
     ]
   },
   plugins: [
+    require('@tailwindcss/typography'),
     require('daisyui'),
   ],
 }

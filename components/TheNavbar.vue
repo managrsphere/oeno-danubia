@@ -11,16 +11,16 @@
                 </div>
                 <ul tabindex="0"
                     class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Über uns</a></li>
+                    <li><nuxt-link to="/about">Über uns</nuxt-link></li>
                     <li><a>Chargia</a></li>
                     <li><a>Semesterprogramm</a></li>
                 </ul>
             </div>
-            <a class="btn btn-ghost text-xl">Oeno Danubia</a>
+            <nuxt-link to="/" class="btn btn-ghost text-xl">Oeno Danubia</nuxt-link>
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-                <li><a>Über uns</a></li>
+                <li><nuxt-link to="/about">Über uns</nuxt-link></li>
                 <li><a>Chargia</a></li>
                 <li><a>Semesterprogramm</a></li>
             </ul>
