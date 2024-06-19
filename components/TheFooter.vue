@@ -1,9 +1,6 @@
 <template>
     <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
         <nav class="grid grid-flow-col gap-4">
-            <a class="link link-hover">Über uns</a>
-            <a class="link link-hover">Chargia</a>
-            <a class="link link-hover">Semesterprogramm</a>
             <a class="link link-hover">Kontakt</a>
             <a class="link link-hover">Impressum</a>
             <a class="link link-hover">Datenschutz</a>
