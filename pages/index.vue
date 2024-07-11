@@ -1,15 +1,17 @@
 <template>
     <div class="min-h-screen flex flex-col text-base-content">
-        <section class="flex-1 flex justify-center items-center bg-base-100">
+        <section class="flex-1 flex justify-center items-center bg-base-100 min-h-screen">
             <div class="container mx-auto text-center">
-                <h1
-                    class="text-8xl font-bold font-tangerine bg-gradient-to-r from-secondary via-accent to-primary inline-block text-transparent bg-clip-text">
-                    Bono consilio - opera bona!</h1>
+                <div class="tooltip" data-tip="Dem guten Rat mögen gute Taten folgen!">
+                    <h1
+                        class="text-8xl font-bold font-tangerine bg-gradient-to-r from-secondary via-accent to-primary inline-block text-transparent bg-clip-text">
+                        Bono consilio - opera bona!</h1>
+                </div>
                 <h2 class="text-2xl font-semibold">Besuche uns gerne an unserem Stammtisch</h2>
                 <h2 class="text-2xl font-semibold">Jeden Mittwoch ab 21 Uhr in der Schustergasse 14, Passau</h2>
             </div>
         </section>
-        <section class="flex-1 bg-base-300">
+        <section class="flex-1 bg-base-300 min-h-screen">
             <div class="container mx-auto flex justify-center items-center h-full">
                 <div class="prose text-left">
                     <p class="uppercase">Benefits</p>
@@ -63,12 +65,12 @@
                 </div>
             </div>
         </section>
-        <section class="flex-1 bg-base-100">
+        <section class="flex-1 bg-base-100 min-h-screen">
             <div class="container mx-auto flex justify-center items-center h-full">
                 <div class="text-center">
                     <p class="uppercase">Galerie</p>
                     <h1 class="text-2xl font-bold">Hier siehst du einige Eindrücke unserer Verbindung</h1>
-
+<!--
                     <div class="carousel w-3/4">
                         <div id="slide1" class="carousel-item relative w-full">
                             <img src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
@@ -106,11 +108,11 @@
                                 <a href="#slide1" class="btn btn-circle">❯</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
-        <section class="flex-1 bg-base-200">
+        <section class="flex-1 bg-base-200 min-h-screen">
             <div class="container mx-auto flex justify-center items-center h-full">
                 <div class="text-center">
                     <h1 class="text-3xl font-semibold">FAQ</h1>

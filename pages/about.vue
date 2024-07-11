@@ -1,7 +1,14 @@
 <template>
-    <div class="flex justify-center">
+    <div class="card w-full shadow-sm">
+        <div class="card-body flex items-center justify-center text-center p-4 lg:p-8">
+            <h1 class="card-title font-bold text-4xl">Über uns</h1>
+        </div>
+        <figure class="relative w-full max-h-80 overflow-hidden">
+            <img src="/img/Montur_Gruppe_Cropped.JPG" alt="Gruppenbild mit Coleur" class="w-full h-full object-cover">
+        </figure>
+    </div>
+    <div class="flex justify-center p-8">
         <article class="prose lg:prose-xl">
-            <h1 class="text-center">Über uns</h1>
             <h2>Geschichte</h2>
             <p>
                 Am 11. Februar 1899 wird die freie Katholische Studentenvereinigung Oeno-Danubia durch Studenten des

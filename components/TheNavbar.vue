@@ -26,7 +26,7 @@
             </ul>
         </div>
         <div class="navbar-end">
-            <a class="btn">Kontakt</a>
+            <nuxt-link to="/contact" class="btn">Kontakt</nuxt-link>
         </div>
     </div>
 </template>

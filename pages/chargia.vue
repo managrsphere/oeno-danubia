@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center">
+    <div class="flex justify-center p-8">
         <article class="prose lg:prose-xl">
             <h1 class="text-center">Chargia</h1>
             <h2>Unsere Chargia</h2>

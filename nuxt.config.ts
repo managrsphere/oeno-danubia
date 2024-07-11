@@ -10,5 +10,5 @@ export default defineNuxtConfig({
       Tangerine: [400, 700]
     },
     display: 'swap'
-  }
+  },
 })
