@@ -1,12 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  theme: {
-    extend: {
-      fontFamily: {
-        tangerine: ['Tangerine', 'cursive']
-      }
-    }
-  },
   daisyui: {
     themes: [
       {
