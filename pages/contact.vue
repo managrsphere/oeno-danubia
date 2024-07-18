@@ -54,8 +54,11 @@
                 <div class="bg-base-100 shadow-xl rounded-lg p-6 h-full">
                     <h2 class="text-2xl font-bold mb-4">Unsere Lage</h2>
                     <div class="aspect-w-16 aspect-h-9">
-                        <iframe></iframe>
-                        <p>Hier OpenStreetMaps</p>
+                        <iframe width="425" height="350"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=13.468023240566255%2C48.572633650943196%2C13.471563756465914%2C48.574216691939505&amp;layer=hot"
+                            style="border: 1px solid black"></iframe><br /><small><a
+                                href="https://www.openstreetmap.org/#map=19/48.57343/13.46979&amp;layers=H">Größere
+                                Karte anzeigen</a></small>
                     </div>
                 </div>
             </div>
