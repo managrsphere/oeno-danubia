@@ -1,12 +1,12 @@
 <template>
     <div>
       <!-- Hero Section -->
-      <section class="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gray-100 p-8">
-        <div class="text-center md:text-left md:w-1/2 space-y-4">
+      <section class="min-h-screen flex flex-col items-center justify-center bg-base-100 p-8">
+        <div class="text-center space-y-4">
           <h1 class="text-4xl font-bold text-primary">K.D.St.V. Oeno-Danubia im CV zu Passau</h1>
           <p class="text-lg text-gray-700">Bono consilio - opera bona!</p>
         </div>
-        <div class="md:w-1/2 mt-8 md:mt-0">
+        <div class="md:w-1/2 mt-8">
           <div class="carousel w-full">
             <div class="carousel-item">
               <img src="https://via.placeholder.com/600x400" alt="Image 1" class="rounded-lg shadow-lg" />
