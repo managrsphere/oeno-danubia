@@ -1,45 +1,43 @@
 <template>
-    <div>
-      <!-- Hero Section -->
-      <section class="min-h-screen flex flex-col items-center justify-center bg-base-100 p-8">
-        <div class="text-center space-y-4">
-          <h1 class="text-4xl font-bold text-primary">K.D.St.V. Oeno-Danubia im CV zu Passau</h1>
-          <p class="text-lg text-gray-700">Bono consilio - opera bona!</p>
-        </div>
-        <div class="md:w-1/2 mt-8">
-          <div class="carousel w-full">
-            <div class="carousel-item">
-              <img src="https://via.placeholder.com/600x400" alt="Image 1" class="rounded-lg shadow-lg" />
-            </div>
-            <div class="carousel-item">
-              <img src="https://via.placeholder.com/600x400" alt="Image 2" class="rounded-lg shadow-lg" />
-            </div>
-            <div class="carousel-item">
-              <img src="https://via.placeholder.com/600x400" alt="Image 3" class="rounded-lg shadow-lg" />
-            </div>
-          </div>
-        </div>
-      </section>
-  
-      <!-- Benefits Section -->
-      <section class="py-16 bg-white">
-        <div class="container mx-auto">
-          <h2 class="text-3xl font-bold text-center text-primary mb-8">Benefits / What to Expect</h2>
+  <div>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center bg-base-300 text-base-content">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center lg:items-start p-4 lg:p-20 relative z-10">
+      <div class="text-left lg:w-2/3 lg:order-1">
+        <h1 class="text-4xl lg:text-6xl font-bold">Oeno-Danubia<br> im CV zu Passau</h1>
+        <p class="text-xl font-semibold text-primary my-4">Bono consilio - opera bona!</p>
+        <p class="text-lg my-4">
+          Wir treffen uns jeden Mittwoch ab 21 Uhr auf unserem Verbindungshaus in der Schustergasse 14 in Passau.
+          Wir laden alle, Damen und Herren, herzlich ein, ein paar schöne Stunden mit uns zu verbringen.
+        </p>
+        <nuxt-link to="/contact" class="btn btn-primary mt-4">Kontakt</nuxt-link>
+      </div>
+      <div class="lg:w-1/3 h-full relative lg:order-2">
+        <img src="/img/Singen_Abend.jpg" alt="Singen Abend" class="w-1/2 h-full object-cover opacity-60" />
+      </div>
+    </div>
+  </section>
+
+    <!--
+        
+      <section class="py-16 bg-neutral">
+        <div class="container mx-auto w-1/2">
+          <h2 class="text-3xl font-bold text-center text-neutral-content mb-8">Benefits / What to Expect</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="card bg-base-100 shadow-lg">
-              <div class="card-body">
+            <div class="card bg-accent shadow-lg">
+              <div class="card-body text-accent-content">
                 <h3 class="card-title text-xl">Networking Opportunities</h3>
                 <p>Connect with professionals and peers in your field.</p>
               </div>
             </div>
-            <div class="card bg-base-100 shadow-lg">
-              <div class="card-body">
+            <div class="card bg-accent shadow-lg">
+              <div class="card-body text-accent-content">
                 <h3 class="card-title text-xl">Workshops & Events</h3>
                 <p>Participate in exclusive workshops and events.</p>
               </div>
             </div>
-            <div class="card bg-base-100 shadow-lg">
-              <div class="card-body">
+            <div class="card bg-accent shadow-lg">
+              <div class="card-body text-accent-content">
                 <h3 class="card-title text-xl">Career Guidance</h3>
                 <p>Receive guidance and support for your career development.</p>
               </div>
@@ -48,7 +46,6 @@
         </div>
       </section>
   
-      <!-- FAQ Section -->
       <section class="py-16 bg-gray-100">
         <div class="container mx-auto">
           <h2 class="text-3xl font-bold text-center text-primary mb-8">FAQ</h2>
@@ -83,13 +80,13 @@
           </div>
         </div>
       </section>
-    </div>
-  </template>
-  
-  <script setup lang="ts">
-  </script>
-  
-  <style scoped>
-  /* Add any additional custom styles here */
-  </style>
-  
+      -->
+  </div>
+</template>
+
+<script setup lang="ts">
+</script>
+
+<style scoped>
+/* Add any additional custom styles here */
+</style>
