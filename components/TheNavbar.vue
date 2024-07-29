@@ -10,7 +10,7 @@
                     </svg>
                 </div>
                 <ul tabindex="0"
-                    class="menu dropdown-content mt-3 z-[1] p-2 shadow bg-accent text-accent-content rounded-box w-52 font-semibold">
+                    class="menu dropdown-content mt-3 z-[1] p-2 shadow  bg-base-100 text-base-content rounded-box w-52 font-semibold">
                     <li><nuxt-link to="/about">Über uns</nuxt-link></li>
                     <li><nuxt-link to="/chargia">Chargia</nuxt-link></li>
                     <li><a>Semesterprogramm</a></li>
