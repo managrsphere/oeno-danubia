@@ -1,3 +1,4 @@
+
 <template>
     <div class="container bg-base-300 mx-auto p-8 space-y-12">
         <!-- Contact Form -->
@@ -46,6 +47,9 @@
                     <p class="mb-2"><span class="font-bold">Adresse:</span> Schustergasse 14, 94032 Passau</p>
                     <p class="mb-2"><span class="font-bold">Telefon:</span> +49 851 31614</p>
                     <p class="mb-2"><span class="font-bold">E-Mail:</span> senior@oenodanubia.de</p>
+                    <h3 class="text-xl font-bold mt-2">Für Einblicke</h3>
+                    <p class="mb-2"><nuxt-link to="https://www.instagram.com/oenodanubia" target="_blank" class="btn btn-outline btn-sm">Folge uns auf Instagram</nuxt-link></p>
+                    <p class="mb-2"><nuxt-link to="https://www.facebook.com/oenodanubia" target="_blank" class="btn btn-outline btn-sm">Besuche uns auf Facebook</nuxt-link></p>
                 </div>
             </div>
 
