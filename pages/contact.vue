@@ -1,7 +1,6 @@
-
 <template>
-    <div class="container bg-base-300 mx-auto p-8 space-y-12">
-        <!-- Contact Form -->
+    <div class="container mx-auto p-8 space-y-12">
+        <!--
         <div class="max-w-lg mx-auto bg-base-100 shadow-xl rounded-lg p-6">
             <h2 class="text-2xl font-bold mb-4">Kontaktformular</h2>
             <form>
@@ -38,9 +37,10 @@
                 <button type="submit" class="btn btn-primary w-full">Absenden</button>
             </form>
         </div>
+    -->
 
         <!-- Contact Information -->
-        <div class="flex flex-wrap -mx-4 space-y-8 lg:space-y-0">
+        <div class="flex flex-wrap mx-4 space-y-8 lg:space-y-0">
             <div class="w-full lg:w-1/2 px-4">
                 <div class="bg-base-100 shadow-xl rounded-lg p-6 h-full">
                     <h2 class="text-2xl font-bold mb-4">Kontaktinformationen</h2>
