@@ -37,7 +37,7 @@
             </p>
             <h2>Ziele und Prinzipien</h2>
             <p>
-                Die Oeno-Danubia beruht auf den Prinzipien religio, amicitia, scientia und patria. Sie will eine
+                Die Oeno-Danubia beruht auf den Prinzipien <span class="italic font-semibold">religio, amicitia, scientia</span> und <span class="italic font-semibold">patria.</span> Sie will eine
                 lebenslange
                 Freundschaft begründen, welche sich durch ihre couleurstudentischen Traditionen und Comment getragen
                 weiß.
@@ -94,6 +94,7 @@
                 von einem Helm mit Helmbuschen in den Verbindungsfarben. Die vier Felder des Schildes haben folgende
                 Bedeutung:
             </p>
+            <p class="font-bold text-info">Hier Wappen neben Liste einfügen</p>
             <ul>
                 <li>
                     <p>
@@ -121,8 +122,9 @@
             </p>
             <h3>Zirkel</h3>
             <p>
-                Unser Zirkel ist ein couleurstudentisches Monogramm der Buchstaben, V, C, F, Oe-D und einem Rufzeichen:
+                Unser Zirkel ist ein couleurstudentisches Monogramm der Buchstaben: V, C, F, Oe-D und einem Rufzeichen:
             </p>
+            <p class="font-bold text-info">Hier Zirkel neben Liste einfügen</p>
             <ul>
                 <li>
                     <p>

@@ -16,13 +16,13 @@
           <nuxt-link to="/contact.vue" class="btn btn-secondary">Mitglied werden</nuxt-link>
         </div>
       </div>
-      <div class="md:w-1/3 relative">
+      <div class="md:w-1/3 relative mt-4">
         <img src="public/Singen_Abend.png" alt="Gemeinsames Singen bei Kerzenlicht" class="w-full h-full object-cover rounded-lg opacity-70">
       </div>
     </section>
 
   <!-- Section 2 -->
-<section class="flex flex-col md:flex-row bg-neutral text-neutral-content p-8">
+<section class="flex flex-col-reverse md:flex-row bg-neutral text-neutral-content p-8">
   <div class="md:w-2/3 flex flex-col space-y-4">
     <div class="card bg-base-100 text-base-content shadow-xl">
       <figure class="image-container">
@@ -52,14 +52,14 @@
       </div>
     </div>
   </div>
-  <div class="md:w-1/3 bg-accent p-8 flex flex-col items-center justify-center text-center rounded-lg md:ml-4">
+  <div class="md:w-1/3 bg-accent p-8 flex flex-col items-center justify-center text-center rounded-lg sm:mb-4 md:ml-4">
     <div class="badge badge-primary badge-lg">Benefits</div>
-    <h2 class="prose lg:prose-lg text-accent-content text-4xl font-bold">Was dich erwartet</h2>
+    <h2 class="prose lg:prose-lg text-accent-content text-4xl lg-text-4xl font-bold">Was dich erwartet</h2>
   </div>
 </section>
 
     <!-- Section 3 -->
-    <section class="flex flex-col md:flex-row bg-accent text-accent-content p-8">
+    <section class="flex flex-col-reverse md:flex-row bg-accent text-accent-content p-8">
       <div class="md:w-2/3 p-8 flex flex-col space-y-4">
         <div class="collapse">
           <input type="checkbox" class="peer" />
@@ -97,7 +97,7 @@
       </div>
       <div class="md:w-1/3 bg-neutral p-8 flex flex-col items-center justify-center text-center rounded-lg lg:ml-4">
         <div class="badge badge-secondary badge-lg">FAQ</div>
-        <h2 class="prose lg:prose-lg text-neutral-content text-4xl font-bold">Antworten auf deine Fragen</h2>
+        <h2 class="prose lg:prose-lg text-neutral-content text-4xl lg:text-4xl font-bold">Antworten auf deine Fragen</h2>
       </div>
     </section>
 
@@ -110,7 +110,7 @@
 
 <style scoped>
 .image-container {
-    height: 14rem; /* Adjust height as needed */
+    height: 14rem;
     overflow: hidden;
   }
 
