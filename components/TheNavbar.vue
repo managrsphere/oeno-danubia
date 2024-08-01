@@ -13,7 +13,7 @@
                     class="menu dropdown-content mt-3 z-[1] p-2 shadow  bg-base-100 text-base-content rounded-box w-52 font-semibold">
                     <li><nuxt-link to="/about">Über uns</nuxt-link></li>
                     <li><nuxt-link to="/chargia">Chargia</nuxt-link></li>
-                    <li><a>Semesterprogramm</a></li>
+                    <li><nuxt-link to="/sepro">Semesterprogramm</nuxt-link></li>
                 </ul>
             </div>
             <nuxt-link to="/" class="btn btn-ghost text-xl">Oeno Danubia</nuxt-link>
@@ -22,7 +22,7 @@
             <ul class="menu menu-horizontal px-2">
                 <li><nuxt-link to="/about">Über uns</nuxt-link></li>
                 <li><nuxt-link to="/chargia">Chargia</nuxt-link></li>
-                <li><a>Semesterprogramm</a></li>
+                <li><nuxt-link to="/sepro">Semesterprogramm</nuxt-link></li>
             </ul>
         </div>
         <div class="navbar-end">
