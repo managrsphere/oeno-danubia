@@ -31,10 +31,15 @@ const parseDate = (dateString: string): Date => {
 };
 
 const selectedFilter = ref('month');
+
+// Good for retrieving data from db
 const events = ref([
-  { id: 1, title: 'Schafkopftunier', date: '01-08-2024', description: 'Description of Event 1' },
-  { id: 2, title: 'Event 2', date: '10-08-2024', description: 'Description of Event 2' },
-  { id: 3, title: 'Event 3', date: '15-09-2024', description: 'Description of Event 3' },
+  { id: 1, title: 'Abend 1', date: '01-08-2024', description: 'Beschreibung für Abend 1' },
+  { id: 2, title: 'Abend 2', date: '10-08-2024', description: 'Beschreibung für Abend 2' },
+  { id: 3, title: 'Abend 3', date: '15-09-2024', description: 'Beschreibung für Abend 3' },
+  { id: 3, title: 'Abend 4', date: '22-09-2024', description: 'Beschreibung für Abend 4' },
+  { id: 3, title: 'Abend 5', date: '29-09-2024', description: 'Beschreibung für Abend 5' },
+
   // More events
 ]);
 
