@@ -16,7 +16,9 @@
                     <li><nuxt-link to="/sepro">Semesterprogramm</nuxt-link></li>
                 </ul>
             </div>
-            <nuxt-link to="/" class="btn btn-ghost text-xl">Oeno Danubia</nuxt-link>
+            <nuxt-link to="/" class="btn btn-ghost h-16">
+                <img src="/public/OeD_Wappen.png" alt="Wappen Oeno Danubia" class="h-16">
+            </nuxt-link>
         </div>
         <div class="navbar-center hidden lg:flex font-semibold">
             <ul class="menu menu-horizontal px-2">

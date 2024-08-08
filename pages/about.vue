@@ -94,29 +94,31 @@
                 von einem Helm mit Helmbuschen in den Verbindungsfarben. Die vier Felder des Schildes haben folgende
                 Bedeutung:
             </p>
-            <p class="font-bold text-info">Hier Wappen neben Liste einfügen</p>
-            <ul>
-                <li>
-                    <p>
-                        links oben: Kreuz als Symbol des Prinzips „religio“
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        links unten: verschränkte Hände als Symbol des Prinzips „amicitia“
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        rechts unten: auf einem Buch sitzende Eule als Symbol des Prinzips „scientia“
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        rechts oben: roter Wolf auf weißem Grund (Passauer Stadtwappen) als Symbol des Prinzips „patria“
-                    </p>
-                </li>
-            </ul>
+            <div class="flex flex-row items-center">
+                <img src="/public/OeD_Wappen.png" alt="Wappen Oeno Danubia" class="max-h-64">
+                <ul>
+                    <li>
+                        <p>
+                            Links-Oben: Kreuz als Symbol des Prinzips „religio“
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Links-Unten: verschränkte Hände als Symbol des Prinzips „amicitia“
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Rechts-Unten: auf einem Buch sitzende Eule als Symbol des Prinzips „scientia“
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Rechts-Oben: roter Wolf auf weißem Grund (Passauer Stadtwappen) als Symbol des Prinzips „patria“
+                        </p>
+                    </li>
+                </ul>
+            </div>
             <p>
                 In der Mitte befindet sich ein kleiner Schild mit den Verbindungsfarben und dem Zirkel.
             </p>
@@ -124,21 +126,25 @@
             <p>
                 Unser Zirkel ist ein couleurstudentisches Monogramm der Buchstaben: V, C, F, Oe-D und einem Rufzeichen:
             </p>
-            <p class="font-bold text-info">Hier Zirkel neben Liste einfügen</p>
-            <ul>
-                <li>
-                    <p>
-                        Diese Buchstaben stehen für VIVAT, CRESCAT, FLOREAT OENO-DANUBIA (Oeno-Danubia lebe, wachse und
-                        gedeihe).
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Das Rufzeichen steht für IN AETERNUM und bedeutet, dass die Verbindung noch einen aktiven Teil
-                        hat.
-                    </p>
-                </li>
-            </ul>
+            <div class="flex flex-row items-center">
+                <ul>
+                    <li>
+                        <p>
+                            Diese Buchstaben stehen für VIVAT, CRESCAT, FLOREAT OENO-DANUBIA (Oeno-Danubia lebe, wachse und
+                            gedeihe).
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Das Rufzeichen steht für IN AETERNUM und bedeutet, dass die Verbindung noch einen aktiven Teil
+                            hat.
+                        </p>
+                    </li>
+                </ul>
+                <div class="bg-accent p-4 rounded-lg">
+                    <img src="/public/OeD_Zirkel.png" alt="Zirkel Oeno Danubia" class="max-h-64">
+                </div>
+            </div>
             <h2>Unsere Ehrenmitglieder</h2>
             <ul>
                 <li>

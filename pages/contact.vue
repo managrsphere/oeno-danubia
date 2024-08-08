@@ -48,8 +48,10 @@
                     <p class="mb-2"><span class="font-bold">Telefon:</span> +49 851 31614</p>
                     <p class="mb-2"><span class="font-bold">E-Mail:</span> senior@oenodanubia.de</p>
                     <h3 class="text-xl font-bold mt-2">Für Einblicke</h3>
-                    <p class="mb-2"><nuxt-link to="https://www.instagram.com/oenodanubia" target="_blank" class="btn btn-outline btn-sm">Folge uns auf Instagram</nuxt-link></p>
-                    <p class="mb-2"><nuxt-link to="https://www.facebook.com/oenodanubia" target="_blank" class="btn btn-outline btn-sm">Besuche uns auf Facebook</nuxt-link></p>
+                    <p class="mb-2"><nuxt-link to="https://www.instagram.com/oenodanubia" target="_blank"
+                            class="btn btn-outline btn-sm">Folge uns auf Instagram</nuxt-link></p>
+                    <p class="mb-2"><nuxt-link to="https://www.facebook.com/oenodanubia" target="_blank"
+                            class="btn btn-outline btn-sm">Besuche uns auf Facebook</nuxt-link></p>
                 </div>
             </div>
 
@@ -59,10 +61,10 @@
                     <h2 class="text-2xl font-bold mb-4">Unsere Lage</h2>
                     <div class="aspect-w-16 aspect-h-9">
                         <iframe width="425" height="350"
-                            src="https://www.openstreetmap.org/export/embed.html?bbox=13.468023240566255%2C48.572633650943196%2C13.471563756465914%2C48.574216691939505&amp;layer=hot"
-                            style="border: 1px solid black"></iframe><br /><small><nuxt-link
-                                href="https://www.openstreetmap.org/#map=19/48.57343/13.46979&amp;layers=H" class="btn btn-primary" target="_blank">Größere
-                                Karte anzeigen</nuxt-link></small>
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=13.467999100685121%2C48.57287678938518%2C13.47153961658478%2C48.574459822768915&amp;layer=mapnik"
+                            style="border: 1px solid black"></iframe><br /><small><nuxt-link to="https://www.openstreetmap.org/#map=19/48.57367/13.46977" target="_blank" class="btn btn-primary"
+                                >Größere Karte
+                                anzeigen</nuxt-link></small>
                     </div>
                 </div>
             </div>

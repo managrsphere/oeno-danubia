@@ -9,7 +9,7 @@
       </select>
     </div>
     <div v-if="filteredEvents.length" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      <div v-for="event in filteredEvents" :key="event.id" class="bg-accent text-accent-content p-4 rounded-lg shadow-xl">
+      <div v-for="event in filteredEvents" :key="event.id" class="bg-base-100 text-base-content p-4 rounded-lg shadow-xl">
         <h3 class="text-lg font-bold">{{ event.title }}</h3>
         <p class="text-sm">{{ event.date }}</p>
         <p class="text-sm">{{ event.description }}</p>
