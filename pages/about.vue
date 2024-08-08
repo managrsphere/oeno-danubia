@@ -1,7 +1,7 @@
 <template>
     <div class="flex justify-center p-8">
         <article class="prose lg:prose-lg">
-            <h1>Über uns</h1>
+            <h1 class="text-center">Über uns</h1>
             <h2>Geschichte</h2>
             <p>
                 Am 11. Februar 1899 wird die freie Katholische Studentenvereinigung Oeno-Danubia durch Studenten des
