@@ -1,7 +1,8 @@
 <template>
     <div class="flex justify-center p-8">
         <article class="prose lg:prose-lg">
-            <h1 class="text-center">Chargia</h1>
+            <h1>Chargia</h1>
+            <div class="divider divider-secondary"></div>
             <h2>Unsere Chargia</h2>
                 <p><span class="font-bold">Senior:</span> Maurus Kruis, stud. iur.</p>
                 <p><span class="font-bold">Consenior:</span> Nikolaus Montag, stud. iur.</p>

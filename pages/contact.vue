@@ -43,15 +43,19 @@
         <div class="flex flex-wrap mx-4 space-y-8 lg:space-y-0">
             <div class="w-full lg:w-1/2 px-4">
                 <div class="bg-base-100 shadow-xl rounded-lg p-6 h-full">
-                    <h2 class="text-2xl font-bold mb-4">Kontaktinformationen</h2>
-                    <p class="mb-2"><span class="font-bold">Adresse:</span> Schustergasse 14, 94032 Passau</p>
-                    <p class="mb-2"><span class="font-bold">Telefon:</span> +49 851 31614</p>
-                    <p class="mb-2"><span class="font-bold">E-Mail:</span> senior@oenodanubia.de</p>
-                    <h3 class="text-xl font-bold mt-2">Für Einblicke</h3>
-                    <p class="mb-2"><nuxt-link to="https://www.instagram.com/oenodanubia" target="_blank"
-                            class="btn btn-outline btn-sm">Folge uns auf Instagram</nuxt-link></p>
-                    <p class="mb-2"><nuxt-link to="https://www.facebook.com/oenodanubia" target="_blank"
-                            class="btn btn-outline btn-sm">Besuche uns auf Facebook</nuxt-link></p>
+                    <div class="my-4">
+                        <h2 class="text-2xl font-bold mb-4">Kontaktinformationen</h2>
+                        <p class="mb-2"><span class="font-bold">Adresse:</span> Schustergasse 14, 94032 Passau</p>
+                        <p class="mb-2"><span class="font-bold">Telefon:</span> +49 851 31614</p>
+                        <p class="mb-2"><span class="font-bold">E-Mail:</span> senior@oenodanubia.de</p>
+                    </div>
+                    <div class="my-4">
+                        <h3 class="text-xl font-bold mb-4">Für Einblicke</h3>
+                        <p class="mb-3"><nuxt-link to="https://www.instagram.com/oenodanubia" target="_blank"
+                                class="btn btn-outline btn-sm">Folge uns auf Instagram</nuxt-link></p>
+                        <p class="mb-3"><nuxt-link to="https://www.facebook.com/oenodanubia" target="_blank"
+                                class="btn btn-outline btn-sm">Besuche uns auf Facebook</nuxt-link></p>
+                    </div>
                 </div>
             </div>
 

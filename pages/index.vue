@@ -9,7 +9,7 @@
         <h1 class="text-4xl md:text-6xl font-bold">Oeno Danubia im CV zu Passau</h1>
         <div class="w-3/4">
           <h2 class="text-xl md:text-2xl font-semibold">Bono consilia - opera bona</h2>
-          <hr class="border-primary mt-2">
+          <div class="divider divider-primary mt-2"></div>
         </div>
         <p class="text-lg md:text-xl prose">Wir treffen uns jeden Mittwoch ab 21 Uhr auf unserem Verbindungshaus in der
           Schustergasse 14 in Passau.
