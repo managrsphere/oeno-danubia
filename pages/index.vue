@@ -21,37 +21,19 @@
       </div>
       <!-- Image -->
       <div class="md:w-1/2 mt-4 md:pl-8">
-        <div class="carousel w-full max-h-96">
-          <div id="slide1" class="carousel-item relative w-full">
-            <img src="public/Singen_Abend.png" alt="Gemeinsames Singen bei Kerzenlicht"
-              class="w-full h-auto object-cover rounded-lg opacity-80">
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide4" class="btn btn-circle">❮</a>
-              <a href="#slide2" class="btn btn-circle">❯</a>
+        <div class="carousel rounded-box w-5/6 overflow-hidden relative">
+          <div class="carousel-inner flex transition-transform duration-1000 ease-in-out">
+            <div class="carousel-item w-full flex-shrink-0">
+              <img src="/Singen_Abend.png" alt="Gemeinsames Singen bei Kerzenlicht" class="w-full h-auto object-cover rounded-lg opacity-80">
             </div>
-          </div>
-          <div id="slide2" class="carousel-item relative w-full">
-            <img src="public/Montur_Gruppe.png" alt="Gemeinsames Singen bei Kerzenlicht"
-              class="w-full h-auto object-cover rounded-lg opacity-80">
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide1" class="btn btn-circle">❮</a>
-              <a href="#slide3" class="btn btn-circle">❯</a>
+            <div class="carousel-item w-full flex-shrink-0">
+              <img src="/Montur_Gruppe.png" alt="Gemeinsames Singen bei Kerzenlicht" class="w-full h-auto object-cover rounded-lg opacity-80">
             </div>
-          </div>
-          <div id="slide3" class="carousel-item relative w-full">
-            <img src="public/Fluss_Anstoßen.jpeg" alt="Gemeinsames Singen bei Kerzenlicht"
-              class="w-full h-auto object-cover rounded-lg opacity-80">
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide2" class="btn btn-circle">❮</a>
-              <a href="#slide4" class="btn btn-circle">❯</a>
+            <div class="carousel-item w-full flex-shrink-0">
+              <img src="/Fluss_Anstoßen.jpeg" alt="Gemeinsames Singen bei Kerzenlicht" class="w-full h-auto object-cover rounded-lg opacity-80">
             </div>
-          </div>
-          <div id="slide4" class="carousel-item relative w-full">
-            <img src="public/Wappen_Flagge.jpg" alt="Gemeinsames Singen bei Kerzenlicht"
-              class="w-full h-auto object-cover rounded-lg opacity-80">
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide3" class="btn btn-circle">❮</a>
-              <a href="#slide1" class="btn btn-circle">❯</a>
+            <div class="carousel-item w-full flex-shrink-0">
+              <img src="/Wappen_Flagge.jpg" alt="Gemeinsames Singen bei Kerzenlicht" class="w-full h-auto object-cover rounded-lg opacity-80">
             </div>
           </div>
         </div>
@@ -147,11 +129,36 @@
 </template>
 
 <script setup lang="ts">
+onMounted(() => {
+  const interval = 3000; // 3 seconds
+  let index = 0;
+  const items = document.querySelector('.carousel-inner') as HTMLElement;
+  const totalItems = document.querySelectorAll('.carousel-item').length;
+
+  const cycleCarousel = () => {
+    if (!items) return;
+    index = (index + 1) % totalItems;
+    items.style.transform = `translateX(-${index * 100}%)`;
+  };
+
+  setInterval(cycleCarousel, interval); // Change slide every 3 seconds
+  cycleCarousel(); // Initialize the first slide
+});
 </script>
 
 <style scoped>
 .image-container {
   height: 14rem;
   overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 1s ease-in-out; /* Smooth sliding effect */
+}
+
+.carousel-item {
+  min-width: 100%;
+  flex-shrink: 0; /* Prevent shrinking */
 }
 </style>
