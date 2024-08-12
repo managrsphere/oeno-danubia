@@ -24,16 +24,36 @@
         <div class="carousel rounded-box w-5/6 overflow-hidden relative">
           <div class="carousel-inner flex transition-transform duration-1000 ease-in-out">
             <div class="carousel-item w-full flex-shrink-0">
-              <img src="/Singen_Abend.png" alt="Gemeinsames Singen bei Kerzenlicht" class="w-full h-auto object-cover rounded-lg opacity-80">
+              <img src="/carousel/Singen_Abend.png" alt="Gemeinsames Singen bei Kerzenlicht"
+                class="w-full h-auto object-cover rounded-lg opacity-80">
             </div>
             <div class="carousel-item w-full flex-shrink-0">
-              <img src="/Montur_Gruppe.png" alt="Gemeinsames Singen bei Kerzenlicht" class="w-full h-auto object-cover rounded-lg opacity-80">
+              <img src="/carousel/Ausflug_Natur.jpg" alt="Gemeinsames Singen bei Kerzenlicht"
+                class="w-full h-auto object-cover rounded-lg opacity-80">
             </div>
             <div class="carousel-item w-full flex-shrink-0">
-              <img src="/Fluss_Anstoßen.jpeg" alt="Gemeinsames Singen bei Kerzenlicht" class="w-full h-auto object-cover rounded-lg opacity-80">
+              <img src="/carousel/Brücke.jpg" alt="Gemeinsames Singen bei Kerzenlicht"
+                class="w-full h-auto object-cover rounded-lg opacity-80">
             </div>
             <div class="carousel-item w-full flex-shrink-0">
-              <img src="/Wappen_Flagge.jpg" alt="Gemeinsames Singen bei Kerzenlicht" class="w-full h-auto object-cover rounded-lg opacity-80">
+              <img src="/carousel/Duo_Abend.jpg" alt="Gemeinsames Singen bei Kerzenlicht"
+                class="w-full h-auto object-cover rounded-lg opacity-80">
+            </div>
+            <div class="carousel-item w-full flex-shrink-0">
+              <img src="/carousel/Montur_Gruppe.png" alt="Gemeinsames Singen bei Kerzenlicht"
+                class="w-full h-auto object-cover rounded-lg opacity-80">
+            </div>
+            <div class="carousel-item w-full flex-shrink-0">
+              <img src="/carousel/Schnee_Wanderung.jpg" alt="Gemeinsames Singen bei Kerzenlicht"
+                class="w-full h-auto object-cover rounded-lg opacity-80">
+            </div>
+            <div class="carousel-item w-full flex-shrink-0">
+              <img src="/carousel/Weltkarte.jpeg" alt="Gemeinsames Singen bei Kerzenlicht"
+                class="w-full h-auto object-cover rounded-lg opacity-80">
+            </div>
+            <div class="carousel-item w-full flex-shrink-0">
+              <img src="/carousel/Zapfen.jpg" alt="Gemeinsames Singen bei Kerzenlicht"
+                class="w-full h-auto object-cover rounded-lg opacity-80">
             </div>
           </div>
         </div>
@@ -154,11 +174,13 @@ onMounted(() => {
 
 .carousel-inner {
   display: flex;
-  transition: transform 1s ease-in-out; /* Smooth sliding effect */
+  transition: transform 1s ease-in-out;
+  /* Smooth sliding effect */
 }
 
 .carousel-item {
   min-width: 100%;
-  flex-shrink: 0; /* Prevent shrinking */
+  flex-shrink: 0;
+  /* Prevent shrinking */
 }
 </style>
