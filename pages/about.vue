@@ -3,7 +3,7 @@
         <article class="prose lg:prose.xl">
             <h1>Über uns</h1>
             <div class="divider divider-primary"></div>
-            <details class="collapse">
+            <details class="collapse prose-">
                 <summary class="collapse-title bg-primary text-primary-content text-xl font-semibold">Geschichte
                 </summary>
                 <div class="collapse-content bg-primary text-primary-content">

@@ -1,64 +1,20 @@
 <template>
   <div class="flex flex-col">
-
-    <!-- Section 1 -->
-    <section
-      class="min-h-screen flex flex-col md:flex-row justify-center items-center px-4 md:px-8 py-8 md:py-16 space-y-8 md:space-y-0">
-      <!-- Content -->
-      <div class="flex flex-col items-start justify-center md:w-2/3 space-y-4 z-10 md:pr-8">
-        <h1 class="text-4xl md:text-6xl font-bold">Oeno Danubia im CV zu Passau</h1>
-        <div class="w-3/4">
-          <h2 class="text-xl md:text-2xl font-semibold">Bono consilia - opera bona</h2>
-          <div class="divider divider-primary mt-2"></div>
-        </div>
-        <p class="text-lg md:text-xl prose">Wir treffen uns jeden Mittwoch ab 21 Uhr auf unserem Verbindungshaus in der
-          Schustergasse 14 in Passau.
-          Wir laden alle, Damen und Herren, herzlich ein, ein paar schöne Stunden mit uns zu verbringen.</p>
-        <div class="flex space-x-4">
-          <nuxt-link to="/about" class="btn btn-primary">Mehr erfahren</nuxt-link>
-          <nuxt-link to="/contact" class="btn btn-secondary">Mitglied werden</nuxt-link>
+    <!-- Hero Section with Carousel Effect -->
+    <div class="hero min-h-screen" id="hero-section">
+      <div class="hero-overlay bg-opacity-70"></div>
+      <div class="hero-content text-neutral-content text-center">
+        <div class="max-w-md">
+          <h1 class="mb-3 text-5xl font-bold">Oeno Danubia im CV zu Passau</h1>
+          <h2 class="text-xl font-semibold">Bono consilia - opera bona</h2>
+          <div class="divider divider-primary my-2"></div>
+          <p class="prose text-neutral-content text-lg">
+            Wir treffen uns jeden Mittwoch ab 21 Uhr auf unserem Verbindungshaus in der
+            Schustergasse 14 in Passau. Wir laden alle, Damen und Herren, herzlich ein, ein paar schöne Stunden mit uns zu verbringen.
+          </p>
         </div>
       </div>
-      <!-- Image -->
-      <div class="md:w-1/2 mt-4 md:pl-8">
-        <div class="carousel rounded-box w-5/6 overflow-hidden relative">
-          <div class="carousel-inner flex transition-transform duration-1000 ease-in-out">
-            <div class="carousel-item w-full flex-shrink-0">
-              <img src="/carousel/Singen_Abend.png" alt="Gemeinsames Singen bei Kerzenlicht"
-                class="w-full h-auto object-cover rounded-lg opacity-80">
-            </div>
-            <div class="carousel-item w-full flex-shrink-0">
-              <img src="/carousel/Ausflug_Natur.jpg" alt="Gemeinsames Singen bei Kerzenlicht"
-                class="w-full h-auto object-cover rounded-lg opacity-80">
-            </div>
-            <div class="carousel-item w-full flex-shrink-0">
-              <img src="/carousel/Brücke.jpg" alt="Gemeinsames Singen bei Kerzenlicht"
-                class="w-full h-auto object-cover rounded-lg opacity-80">
-            </div>
-            <div class="carousel-item w-full flex-shrink-0">
-              <img src="/carousel/Duo_Abend.jpg" alt="Gemeinsames Singen bei Kerzenlicht"
-                class="w-full h-auto object-cover rounded-lg opacity-80">
-            </div>
-            <div class="carousel-item w-full flex-shrink-0">
-              <img src="/carousel/Montur_Gruppe.png" alt="Gemeinsames Singen bei Kerzenlicht"
-                class="w-full h-auto object-cover rounded-lg opacity-80">
-            </div>
-            <div class="carousel-item w-full flex-shrink-0">
-              <img src="/carousel/Schnee_Wanderung.jpg" alt="Gemeinsames Singen bei Kerzenlicht"
-                class="w-full h-auto object-cover rounded-lg opacity-80">
-            </div>
-            <div class="carousel-item w-full flex-shrink-0">
-              <img src="/carousel/Weltkarte.jpeg" alt="Gemeinsames Singen bei Kerzenlicht"
-                class="w-full h-auto object-cover rounded-lg opacity-80">
-            </div>
-            <div class="carousel-item w-full flex-shrink-0">
-              <img src="/carousel/Zapfen.jpg" alt="Gemeinsames Singen bei Kerzenlicht"
-                class="w-full h-auto object-cover rounded-lg opacity-80">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
 
     <!-- Section 2 -->
     <section class="flex flex-col-reverse md:flex-row bg-neutral text-neutral-content p-8">
@@ -152,17 +108,29 @@
 onMounted(() => {
   const interval = 3000; // 3 seconds
   let index = 0;
-  const items = document.querySelector('.carousel-inner') as HTMLElement;
-  const totalItems = document.querySelectorAll('.carousel-item').length;
 
-  const cycleCarousel = () => {
-    if (!items) return;
-    index = (index + 1) % totalItems;
-    items.style.transform = `translateX(-${index * 100}%)`;
+  // Array of background image URLs
+  const images = [
+    '/carousel/Montur_Gruppe.png',
+    '/carousel/Singen_Abend.png',
+    '/carousel/Ausflug_Natur.jpg',
+    '/carousel/Brücke.jpg',
+    '/carousel/Duo_Abend.jpg',
+    '/carousel/Schnee_Wanderung.jpg',
+    '/carousel/Weltkarte.jpeg',
+    '/carousel/Zapfen.jpg',
+  ];
+
+  const heroSection = document.getElementById('hero-section') as HTMLElement;
+
+  const cycleBackground = () => {
+    if (!heroSection) return;
+    heroSection.style.backgroundImage = `url(${images[index]})`;
+    index = (index + 1) % images.length; // Loop through the images
   };
 
-  setInterval(cycleCarousel, interval); // Change slide every 3 seconds
-  cycleCarousel(); // Initialize the first slide
+  setInterval(cycleBackground, interval); // Change background every 3 seconds
+  cycleBackground(); // Initialize with the first background
 });
 </script>
 
@@ -172,15 +140,7 @@ onMounted(() => {
   overflow: hidden;
 }
 
-.carousel-inner {
-  display: flex;
-  transition: transform 1s ease-in-out;
-  /* Smooth sliding effect */
-}
-
-.carousel-item {
-  min-width: 100%;
-  flex-shrink: 0;
-  /* Prevent shrinking */
+.hero {
+  transition: background-image 1s ease-in-out;
 }
 </style>
