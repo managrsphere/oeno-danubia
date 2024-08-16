@@ -141,6 +141,6 @@ onMounted(() => {
 }
 
 .hero {
-  transition: background-image 1s ease-in-out;
+  transition: background-image 1s ease-out;
 }
 </style>
