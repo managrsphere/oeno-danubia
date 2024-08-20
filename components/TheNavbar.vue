@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar bg-base-300 text-base-content p-4">
+    <div class="navbar bg-base-100 text-base-content p-4">
         <div class="navbar-start">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -20,7 +20,7 @@
                 <img src="/public/OeD_Wappen.png" alt="Wappen Oeno Danubia" class="h-16">
             </nuxt-link>
         </div>
-        <div class="navbar-center hidden lg:flex font-semibold">
+        <div class="navbar-center hidden lg:flex font-semibold text-base-content">
             <ul class="menu menu-horizontal px-2">
                 <li><nuxt-link to="/about">Über uns</nuxt-link></li>
                 <li><nuxt-link to="/chargia">Chargia</nuxt-link></li>

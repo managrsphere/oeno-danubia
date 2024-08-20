@@ -8,7 +8,7 @@
             <div class="prose xl:prose-lg">
                 <h2>Unsere Chargia</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="card card-compact bg-base-100 shadow-xl">
+                    <div class="card card-compact bg-base-200 shadow-xl">
                         <figure>
                             <img src="" alt="">
                         </figure>
@@ -17,7 +17,7 @@
                             <p>Maurus Kruis, stud. iur.</p>
                         </div>
                     </div>
-                    <div class="card card-compact bg-base-100 shadow-xl">
+                    <div class="card card-compact bg-base-200 shadow-xl">
                         <figure>
                             <img src="" alt="">
                         </figure>
@@ -26,7 +26,7 @@
                             <p>Nikolaus Montag, stud. iur.</p>
                         </div>
                     </div>
-                    <div class="card card-compact bg-base-100 shadow-xl">
+                    <div class="card card-compact bg-base-200 shadow-xl">
                         <figure>
                             <img src="" alt="">
                         </figure>
@@ -35,7 +35,7 @@
                             <p>Christof Grobbel, stud. rer. oec.</p>
                         </div>
                     </div>
-                    <div class="card card-compact bg-base-100 shadow-xl">
+                    <div class="card card-compact bg-base-200 shadow-xl">
                         <figure>
                             <img src="" alt="">
                         </figure>
@@ -44,7 +44,7 @@
                             <p></p>
                         </div>
                     </div>
-                    <div class="card card-compact bg-base-100 shadow-xl">
+                    <div class="card card-compact bg-base-200 shadow-xl">
                         <figure>
                             <img src="" alt="">
                         </figure>
@@ -56,7 +56,7 @@
                 </div>
                 <h2>Unsere Philisterchargen</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="card card-compact bg-base-100 shadow-xl">
+                    <div class="card card-compact bg-base-200 shadow-xl">
                         <figure>
                             <img src="" alt="">
                         </figure>
@@ -65,7 +65,7 @@
                             <p>Stefan Grobbel</p>
                         </div>
                     </div>
-                    <div class="card card-compact bg-base-100 shadow-xl">
+                    <div class="card card-compact bg-base-200 shadow-xl">
                         <figure>
                             <img src="" alt="">
                         </figure>
@@ -74,7 +74,7 @@
                             <p>H.H. Carl-Christian Snethlage</p>
                         </div>
                     </div>
-                    <div class="card card-compact bg-base-100 shadow-xl">
+                    <div class="card card-compact bg-base-200 shadow-xl">
                         <figure>
                             <img src="" alt="">
                         </figure>
@@ -83,7 +83,7 @@
                             <p>Martin Reicheneder</p>
                         </div>
                     </div>
-                    <div class="card card-compact bg-base-100 shadow-xl">
+                    <div class="card card-compact bg-base-200 shadow-xl">
                         <figure>
                             <img src="" alt="">
                         </figure>

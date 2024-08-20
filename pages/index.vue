@@ -3,7 +3,7 @@
 
     <div class="hero half-screen" id="hero-section">
         <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-accent-content bg-accent rounded-lg text-center">
+        <div class="hero-content text-base-content bg-base-200 rounded-lg text-center">
           <div class="max-w-lg">
             <h1 class="mb-3 text-5xl font-bold">Oeno Danubia im CV zu Passau</h1>
             <h2 class="text-xl font-semibold">Bono consilia - opera bona</h2>
@@ -19,10 +19,10 @@
 
 
     <!-- Section 2 -->
-    <section class="flex flex-col bg-neutral text-neutral-content p-8">
-      <div class="flex flex-col items-center text-center rounded-lg bg-accent p-6 mb-8">
+    <section class="flex flex-col bg-base text-base-content p-8">
+      <div class="flex flex-col items-center text-center rounded-lg bg-base-200 p-6 mb-8">
         <div class="badge badge-primary badge-lg">Benefits</div>
-        <h2 class="text-accent-content text-4xl font-bold">Was dich erwartet</h2>
+        <h2 class="text-base-content text-4xl font-bold">Was dich erwartet</h2>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <div class="card bg-base-100 text-base-content shadow-xl max-w-xl mx-auto">
@@ -66,10 +66,10 @@
     </section>
 
     <!-- Section 3 -->
-    <section class="flex flex-col bg-accent text-accent-content p-8">
-      <div class="bg-neutral flex flex-col items-center text-center rounded-lg p-8 mb-8">
+    <section class="flex flex-col bg-base-200 text-base-content p-8">
+      <div class="bg-base-100 flex flex-col items-center text-center rounded-lg p-8 mb-8">
         <div class="badge badge-secondary badge-lg">FAQ</div>
-        <h2 class="text-neutral-content text-4xl font-bold">Antworten auf deine Fragen</h2>
+        <h2 class="text-4xl font-bold">Antworten auf deine Fragen</h2>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
         <details class="collapse">

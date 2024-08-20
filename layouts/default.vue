@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col min-h-screen items-center justify-center">
             <TheNavbar class="mb-auto"/>
-            <div class="flex-grow w-full bg-base-300">
+            <div class="flex-grow w-full bg-base-100">
                 <slot />
             </div>
             <TheFooter class="mt-auto"/>

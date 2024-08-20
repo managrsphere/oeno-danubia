@@ -1,10 +1,13 @@
 <template>
-    <div class="flex flex-col items-center p-8">
-        <div class="prose lg:prose-lg mb-8">
-            <h1>Semesterprogramm</h1>
-        </div>
-        <div class="w-full">
-            <TheCalendar />
+    <div class="flex justify-center">
+        <div class="flex flex-col p-8 lg:w-1/2">
+            <div class="prose xl:prose-lg">
+                <h1>Semesterprogramm</h1>
+            </div>
+            <div class="divider divider-primary"></div>
+            <div class="w-full">
+                <TheCalendar />
+            </div>
         </div>
     </div>
 </template>
@@ -13,6 +16,4 @@
 
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
