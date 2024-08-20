@@ -7,7 +7,7 @@
             <div class="divider divider-secondary"></div>
             <div class="prose xl:prose-lg">
                 <h2>Unsere Chargia</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div class="card card-compact bg-base-100 shadow-xl">
                         <figure>
                             <img src="" alt="">
@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <h2>Unsere Philisterchargen</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div class="card card-compact bg-base-100 shadow-xl">
                         <figure>
                             <img src="" alt="">
