@@ -1,7 +1,7 @@
 <template>
     <div class="flex justify-center">
-        <div class="flex flex-col p-8 md:w-1/2">
-            <div class="prose xl:prose-xl">
+        <div class="flex flex-col p-8 lg:w-1/2">
+            <div class="prose xl:prose-lg">
                 <h1>Über uns</h1>
             </div>
             <div class="divider divider-primary"></div>

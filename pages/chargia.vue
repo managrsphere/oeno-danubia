@@ -1,20 +1,100 @@
 <template>
-    <div class="flex justify-center p-8">
-        <article class="prose lg:prose-lg">
-            <h1>Chargia</h1>
+    <div class="flex justify-center">
+        <div class="flex flex-col p-8 lg:w-1/2">
+            <div class="prose xl:prose-lg">
+                <h1>Chargia</h1>
+            </div>
             <div class="divider divider-secondary"></div>
-            <h2>Unsere Chargia</h2>
-                <p><span class="font-bold">Senior:</span> Maurus Kruis, stud. iur.</p>
-                <p><span class="font-bold">Consenior:</span> Nikolaus Montag, stud. iur.</p>
-                <p><span class="font-bold">Fuxmajor:</span> Christof Grobbel, stud. rer. oec</p>
-                <p><span class="font-bold">Scriptor:</span> </p>
-                <p><span class="font-bold">Quaestor:</span> Oskar Stejfa, stud. iur.</p>
-            <h2>Unsere Philisterchargen</h2>
-                <p><span class="font-bold">Philistersenior:</span> Stefan Grobbel</p>
-                <p><span class="font-bold">Philisterconsenior:</span> H.H. Carl-Christian Snethlage</p>
-                <p><span class="font-bold">Philisterscriptor:</span> Martin Reicheneder</p>
-                <p><span class="font-bold">Philisterquaestor:</span> Markus Weigel</p>
-        </article>
+            <div class="prose xl:prose-lg">
+                <h2>Unsere Chargia</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="card card-compact bg-base-100 shadow-xl">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Senior</h2>
+                            <p>Maurus Kruis, stud. iur.</p>
+                        </div>
+                    </div>
+                    <div class="card card-compact bg-base-100 shadow-xl">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Consenior</h2>
+                            <p>Nikolaus Montag, stud. iur.</p>
+                        </div>
+                    </div>
+                    <div class="card card-compact bg-base-100 shadow-xl">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Fuxmajor</h2>
+                            <p>Christof Grobbel, stud. rer. oec.</p>
+                        </div>
+                    </div>
+                    <div class="card card-compact bg-base-100 shadow-xl">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Scriptor</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="card card-compact bg-base-100 shadow-xl">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Quaestor</h2>
+                            <p>Oskar Stejfa, stud. iur.</p>
+                        </div>
+                    </div>
+                </div>
+                <h2>Unsere Philisterchargen</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="card card-compact bg-base-100 shadow-xl">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Philistersenior</h2>
+                            <p>Stefan Grobbel</p>
+                        </div>
+                    </div>
+                    <div class="card card-compact bg-base-100 shadow-xl">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Philisterconsenior</h2>
+                            <p>H.H. Carl-Christian Snethlage</p>
+                        </div>
+                    </div>
+                    <div class="card card-compact bg-base-100 shadow-xl">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Philisterscriptor</h2>
+                            <p>Martin Reicheneder</p>
+                        </div>
+                    </div>
+                    <div class="card card-compact bg-base-100 shadow-xl">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Philisterquaestor</h2>
+                            <p>Markus Weigel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -22,6 +102,4 @@
 
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
