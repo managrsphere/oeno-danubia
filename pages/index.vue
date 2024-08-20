@@ -1,24 +1,32 @@
 <template>
   <div class="flex flex-col">
-    <!-- Hero Section with Carousel Effect -->
-    <div class="hero min-h-screen" id="hero-section">
-      <div class="hero-overlay bg-opacity-70"></div>
-      <div class="hero-content text-neutral-content text-center">
-        <div class="max-w-md">
-          <h1 class="mb-3 text-5xl font-bold">Oeno Danubia im CV zu Passau</h1>
-          <h2 class="text-xl font-semibold">Bono consilia - opera bona</h2>
-          <div class="divider divider-primary my-2"></div>
-          <p class="prose text-neutral-content text-lg">
-            Wir treffen uns jeden Mittwoch ab 21 Uhr auf unserem Verbindungshaus in der
-            Schustergasse 14 in Passau. Wir laden alle, Damen und Herren, herzlich ein, ein paar schöne Stunden mit uns zu verbringen.
-          </p>
+
+    <div class="hero half-screen" id="hero-section">
+      <div class="bg-base-300">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content bg-base-300 rounded-lg text-center">
+          <div class="max-w-lg">
+            <h1 class="mb-3 text-5xl font-bold">Oeno Danubia im CV zu Passau</h1>
+            <h2 class="text-xl font-semibold">Bono consilia - opera bona</h2>
+            <div class="divider divider-primary my-2"></div>
+            <p class="prose text-base-content text-lg">
+              Wir treffen uns jeden Mittwoch ab 21 Uhr auf unserem Verbindungshaus in der
+              Schustergasse 14 in Passau. Wir laden alle, Damen und Herren, herzlich ein, ein paar schöne Stunden mit
+              uns zu verbringen.
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
+
     <!-- Section 2 -->
-    <section class="flex flex-col-reverse md:flex-row bg-neutral text-neutral-content p-8">
-      <div class="md:w-2/3 flex flex-col space-y-4">
+    <section class="flex flex-col bg-neutral text-neutral-content p-8">
+      <div class="flex flex-col items-center text-center rounded-lg bg-accent p-6 mb-8">
+        <div class="badge badge-primary badge-lg">Benefits</div>
+        <h2 class="text-accent-content text-4xl font-bold">Was dich erwartet</h2>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <div class="card bg-base-100 text-base-content shadow-xl max-w-xl mx-auto">
           <figure class="image-container">
             <img src="/public/Gruppe_Billiard.jpeg" alt="Gruppenbild" class="w-full h-56 object-cover rounded-t-lg">
@@ -57,16 +65,15 @@
           </div>
         </div>
       </div>
-      <div
-        class="md:w-1/3 bg-accent p-8 flex flex-col items-center justify-center text-center rounded-lg sm:mb-4 md:ml-4">
-        <div class="badge badge-primary badge-lg">Benefits</div>
-        <h2 class="text-accent-content text-4xl font-bold">Was dich erwartet</h2>
-      </div>
     </section>
 
     <!-- Section 3 -->
-    <section class="flex flex-col-reverse md:flex-row bg-accent text-accent-content p-8">
-      <div class="md:w-2/3 p-8 flex flex-col space-y-4">
+    <section class="flex flex-col bg-accent text-accent-content p-8">
+      <div class="bg-neutral flex flex-col items-center text-center rounded-lg p-8 mb-8">
+        <div class="badge badge-secondary badge-lg">FAQ</div>
+        <h2 class="text-neutral-content text-4xl font-bold">Antworten auf deine Fragen</h2>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <details class="collapse">
           <summary class="collapse-title bg-primary text-primary-content text-xl font-semibold">Was ist die Oeno-Danubia
             Passau?</summary>
@@ -95,18 +102,13 @@
           </div>
         </details>
       </div>
-      <div class="md:w-1/3 bg-neutral p-8 flex flex-col items-center justify-center text-center rounded-lg lg:ml-4">
-        <div class="badge badge-secondary badge-lg">FAQ</div>
-        <h2 class="text-neutral-content text-4xl font-bold">Antworten auf deine Fragen</h2>
-      </div>
     </section>
-
   </div>
 </template>
 
 <script setup lang="ts">
 onMounted(() => {
-  const interval = 3000; // 3 seconds
+  const interval = 5000; // 5 seconds for smoother transitions
   let index = 0;
 
   // Array of background image URLs
@@ -123,13 +125,23 @@ onMounted(() => {
 
   const heroSection = document.getElementById('hero-section') as HTMLElement;
 
+  // Preload images
+  images.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+  });
+
   const cycleBackground = () => {
     if (!heroSection) return;
     heroSection.style.backgroundImage = `url(${images[index]})`;
+    heroSection.style.opacity = '0'; // Start fade out
+    setTimeout(() => {
+      heroSection.style.opacity = '1'; // Fade in
+    }, 100); // Short delay to trigger the fade effect
     index = (index + 1) % images.length; // Loop through the images
   };
 
-  setInterval(cycleBackground, interval); // Change background every 3 seconds
+  setInterval(cycleBackground, interval); // Change background every 5 seconds
   cycleBackground(); // Initialize with the first background
 });
 </script>
@@ -141,6 +153,13 @@ onMounted(() => {
 }
 
 .hero {
-  transition: background-image 1s ease-out;
+  transition: background-image 1s ease-out, opacity 1s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+}
+
+.half-screen {
+  height: 50vh;
 }
 </style>
