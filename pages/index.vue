@@ -2,20 +2,18 @@
   <div class="flex flex-col">
 
     <div class="hero half-screen" id="hero-section">
-      <div class="bg-base-300">
         <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content bg-base-300 rounded-lg text-center">
+        <div class="hero-content text-accent-content bg-accent rounded-lg text-center">
           <div class="max-w-lg">
             <h1 class="mb-3 text-5xl font-bold">Oeno Danubia im CV zu Passau</h1>
             <h2 class="text-xl font-semibold">Bono consilia - opera bona</h2>
             <div class="divider divider-primary my-2"></div>
-            <p class="prose text-base-content text-lg">
+            <p class="prose text-accent-content text-lg">
               Wir treffen uns jeden Mittwoch ab 21 Uhr auf unserem Verbindungshaus in der
               Schustergasse 14 in Passau. Wir laden alle, Damen und Herren, herzlich ein, ein paar schöne Stunden mit
               uns zu verbringen.
             </p>
           </div>
-        </div>
       </div>
     </div>
 
@@ -73,7 +71,7 @@
         <div class="badge badge-secondary badge-lg">FAQ</div>
         <h2 class="text-neutral-content text-4xl font-bold">Antworten auf deine Fragen</h2>
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
         <details class="collapse">
           <summary class="collapse-title bg-primary text-primary-content text-xl font-semibold">Was ist die Oeno-Danubia
             Passau?</summary>
@@ -160,6 +158,6 @@ onMounted(() => {
 }
 
 .half-screen {
-  height: 50vh;
+  height: 65vh;
 }
 </style>
