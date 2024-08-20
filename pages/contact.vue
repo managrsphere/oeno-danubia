@@ -42,7 +42,7 @@
         <!-- Contact Information -->
         <div class="flex flex-wrap mx-4 space-y-8 lg:space-y-0">
             <div class="w-full lg:w-1/2 px-4">
-                <div class="bg-base-100 shadow-xl rounded-lg p-6 h-full">
+                <div class="bg-accent text-accent-content shadow-xl rounded-lg p-6 h-full">
                     <div class="my-4">
                         <h2 class="text-2xl font-bold mb-4">Kontaktinformationen</h2>
                         <p class="mb-2"><span class="font-bold">Adresse:</span> Schustergasse 14, 94032 Passau</p>
@@ -52,16 +52,16 @@
                     <div class="my-4">
                         <h3 class="text-xl font-bold mb-4">Für Einblicke</h3>
                         <p class="mb-3"><nuxt-link to="https://www.instagram.com/oenodanubia" target="_blank"
-                                class="btn btn-outline btn-sm">Folge uns auf Instagram</nuxt-link></p>
+                                class="btn btn-accent-content btn-sm">Folge uns auf Instagram</nuxt-link></p>
                         <p class="mb-3"><nuxt-link to="https://www.facebook.com/oenodanubia" target="_blank"
-                                class="btn btn-outline btn-sm">Besuche uns auf Facebook</nuxt-link></p>
+                                class="btn btn-accent-content btn-sm">Besuche uns auf Facebook</nuxt-link></p>
                     </div>
                 </div>
             </div>
 
             <!-- Google Map -->
             <div class="w-full lg:w-1/2 px-4">
-                <div class="bg-base-100 shadow-xl rounded-lg p-6 h-full">
+                <div class="bg-accent text-accent-content shadow-xl rounded-lg p-6 h-full">
                     <h2 class="text-2xl font-bold mb-4">Unsere Lage</h2>
                     <div class="aspect-w-16 aspect-h-9">
                         <iframe width="425" height="350"
