@@ -30,7 +30,7 @@ const parseDate = (dateString: string): Date => {
   return new Date(year, month - 1, day);
 };
 
-const selectedFilter = ref('month');
+const selectedFilter = ref('year');
 
 // Good for retrieving data from db
 const events = ref([

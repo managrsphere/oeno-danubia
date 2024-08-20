@@ -1,14 +1,14 @@
 <template>
   <div class="flex flex-col">
 
-    <div class="hero half-screen" id="hero-section">
+    <div class="hero min-h-screen" id="hero-section">
         <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-base-content bg-base-200 rounded-lg text-center">
+        <div class="hero-content text-base-100 rounded-lg text-center">
           <div class="max-w-lg">
             <h1 class="mb-3 text-5xl font-bold">Oeno Danubia im CV zu Passau</h1>
             <h2 class="text-xl font-semibold">Bono consilia - opera bona</h2>
             <div class="divider divider-primary my-2"></div>
-            <p class="prose text-accent-content text-lg">
+            <p class="prose text-base-100 text-lg">
               Wir treffen uns jeden Mittwoch ab 21 Uhr auf unserem Verbindungshaus in der
               Schustergasse 14 in Passau. Wir laden alle, Damen und Herren, herzlich ein, ein paar schöne Stunden mit
               uns zu verbringen.
@@ -19,7 +19,7 @@
 
 
     <!-- Section 2 -->
-    <section class="flex flex-col bg-base text-base-content p-8">
+    <section class="min-h-screen flex flex-col bg-base text-base-content p-8">
       <div class="flex flex-col items-center text-center rounded-lg bg-base-200 p-6 mb-8">
         <div class="badge badge-primary badge-lg">Benefits</div>
         <h2 class="text-base-content text-4xl font-bold">Was dich erwartet</h2>
@@ -66,7 +66,7 @@
     </section>
 
     <!-- Section 3 -->
-    <section class="flex flex-col bg-base-200 text-base-content p-8">
+    <section class="min-h-screen flex flex-col bg-base-200 text-base-content p-8">
       <div class="bg-base-100 flex flex-col items-center text-center rounded-lg p-8 mb-8">
         <div class="badge badge-secondary badge-lg">FAQ</div>
         <h2 class="text-4xl font-bold">Antworten auf deine Fragen</h2>
