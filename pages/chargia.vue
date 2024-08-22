@@ -9,7 +9,7 @@
                 <h2>Unsere Chargia</h2>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-6">
                 <div class="card card-compact bg-base-200 shadow-xl">
                     <figure>
                         <img src="" alt="">
@@ -59,7 +59,7 @@
             <div class="prose xl:prose-lg mt-6 mb-3">
                 <h2>Unsere Philisterchargen</h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 <div class="card card-compact bg-base-200 shadow-xl">
                     <figure>
                         <img src="" alt="">

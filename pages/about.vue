@@ -6,11 +6,9 @@
             </div>
             <div class="divider divider-primary"></div>
             <div class="flex flex-col">
-                <details class="collapse mt-4">
-                    <summary class="collapse-title bg-primary text-primary-content text-xl font-semibold">Geschichte
-                    </summary>
-                    <div class="collapse-content bg-primary text-primary-content">
-                        <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold">Geschichte</h2>
+                        <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mt-4">
                             <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                                 <li>
                                     <div class="timeline-middle">
@@ -187,12 +185,10 @@
                             </ul>
                         </ul>
                     </div>
-                </details>
+                </div>
 
-                <details class="collapse mt-4">
-                    <summary class="collapse-title bg-primary text-primary-content text-xl font-semibold">Ziele und
-                        Prinzipien</summary>
-                    <div class="collapse-content bg-primary">
+                <div class="p-6 prose xl:prose-lg">
+                    <h2 class="text-2xl font-semibold">Ziele und Prinzipien</h2>
                         <div class="prose xl:prose-lg text-primary-content">
                             <p>
                                 Die Oeno-Danubia beruht auf den Prinzipien <span class="italic font-semibold">religio,
@@ -236,19 +232,14 @@
                                 zusammengeschlossen...
                             </p>
                         </div>
-                    </div>
-                </details>
+                </div>
 
-                <details class="collapse mt-4">
-                    <summary class="collapse-title bg-primary text-primary-content text-xl font-semibold">Wahlspruch,
-                        Wappen
-                        und Zirkel</summary>
-                    <div class="collapse-content bg-primary">
-                        <div class="prose xl:prose-lg text-primary-content">
-                            <h3 class="text-primary-content">Wahlspruch</h3>
+                <div class="p-6 prose xl:prose-lg">
+                    <h2 class="text-2xl font-semibold">Wahlspruch, Wappen und Zirkel</h2>
+                            <h3 class="text-xl">Wahlspruch</h3>
                             <p>Bono-consilio-opera bona! (Dem guten Rat mögen gute Taten folgen!).</p>
 
-                            <h3 class="text-primary-content">Wappen</h3>
+                            <h3 class="text-xl">Wappen</h3>
                             <p>Unser Wappen zeigt einen viergeteilten Schild...</p>
                             <div class="flex flex-col md:flex-row items-center">
                                 <img src="/public/OeD_Wappen.png" alt="Wappen Oeno Danubia" class="max-h-64">
@@ -271,12 +262,12 @@
                             <p>In der Mitte befindet sich ein kleiner Schild mit den Verbindungsfarben und dem Zirkel.
                             </p>
 
-                            <h3 class="text-primary-content">Zirkel</h3>
+                            <h3 class="text-xl">Zirkel</h3>
                             <p>Unser Zirkel ist ein couleurstudentisches Monogramm der Buchstaben: V, C, F, Oe-D und
                                 einem
                                 Rufzeichen:</p>
                             <div class="flex flex-col md:flex-row-reverse items-center">
-                                <div class="bg-accent p-4 rounded-lg">
+                                <div class="p-4 rounded-lg">
                                     <img src="/public/OeD_Zirkel.png" alt="Zirkel Oeno Danubia" class="max-h-64">
                                 </div>
                                 <ul>
@@ -287,48 +278,48 @@
                                         <p>Das Rufzeichen steht für IN AETERNUM...</p>
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
                     </div>
-                </details>
+                </div>
 
-                <details class="collapse mt-4">
-                    <summary class="collapse-title bg-primary text-primary-content text-xl font-semibold">Unsere
-                        Ehrenmitglieder</summary>
-                    <div class="collapse-content bg-primary">
-                        <ul>
-                            <li>
-                                <p class="prose xl:prose-lg text-primary-content"><span class="font-bold">Professor Dr. Walter Schweitzer,</span> Präsident der
-                                    Universität
-                                    Passau a.D.</p>
-                            </li>
-                            <li>
-                                <p class="prose xl:prose-lg text-primary-content"><span class="font-bold">Erwin Huber, Bayerischer Staatsminister für Finanzen
-                                        a.D.,</span>
-                                    ehem. CSU-Vorsitzender</p>
-                            </li>
-                            <li>
-                                <p class="prose xl:prose-lg text-primary-content"><span class="font-bold">Msgr. Professor Dr. Dr. Peter Fonk,</span> Professor für
-                                    Moraltheologie</p>
-                            </li>
-                            <li>
-                                <p class="prose xl:prose-lg text-primary-content"><span class="font-bold">Hans Hösl(†),</span> Oberbürgermeister a.D. der Stadt Passau
-                                </p>
-                            </li>
-                            <li>
-                                <p class="prose xl:prose-lg text-primary-content"><span class="font-bold">S.E. Antonius Hofmann(†),</span> Bischof emeritus von Passau
-                                </p>
-                            </li>
-                            <li>
-                                <p class="prose xl:prose-lg text-primary-content"><span class="font-bold">S.E. Wilhelm Schraml(†),</span> Bischof emeritus von Passau
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </details>
+                <div class="p-6 prose xl:prose-lg">
+                    <h2 class="text-2xl font-semibold">Unsere Ehrenmitglieder</h2>
+                    <ul>
+                        <li>
+                            <p><span class="font-semibold">Professor Dr. Walter Schweitzer,</span>
+                                Präsident der
+                                Universität
+                                Passau a.D.</p>
+                        </li>
+                        <li>
+                            <p><span class="font-semibold">Erwin Huber, Bayerischer Staatsminister für
+                                    Finanzen
+                                    a.D.,</span>
+                                ehem. CSU-Vorsitzender</p>
+                        </li>
+                        <li>
+                            <p><span class="font-semibold">Msgr. Professor Dr. Dr. Peter Fonk,</span>
+                                Professor für
+                                Moraltheologie</p>
+                        </li>
+                        <li>
+                            <p><span class="font-semibold">Hans Hösl (†),</span> Oberbürgermeister a.D.
+                                der Stadt Passau
+                            </p>
+                        </li>
+                        <li>
+                            <p><span class="font-semibold">S.E. Antonius Hofmann (†),</span> Bischof
+                                emeritus von Passau
+                            </p>
+                        </li>
+                        <li>
+                            <p><span class="font-semibold">S.E. Wilhelm Schraml (†),</span> Bischof
+                                emeritus von Passau
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
 </template>
 
 <script setup lang="ts">

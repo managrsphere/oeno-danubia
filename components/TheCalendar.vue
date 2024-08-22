@@ -8,7 +8,7 @@
         <option value="year">Jahr</option>
       </select>
     </div>
-    <div v-if="filteredEvents.length" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 bg-base-100 p-6 rounded-md">
+    <div v-if="filteredEvents.length" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 bg-base-100 p-6 rounded-md">
       <div v-for="event in filteredEvents" :key="event.id" class="bg-base-200 text-base-content p-6 rounded-lg shadow-xl">
         <h3 class="text-lg font-bold">{{ event.title }}</h3>
         <p class="text-sm">{{ event.date }}</p>

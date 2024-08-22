@@ -2,30 +2,30 @@
   <div class="flex flex-col">
 
     <div class="hero min-h-screen" id="hero-section">
-        <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-base-100 rounded-lg text-center">
-          <div class="max-w-lg">
-            <h1 class="mb-3 text-5xl font-bold">Oeno Danubia im CV zu Passau</h1>
-            <h2 class="text-xl font-semibold">Bono consilia - opera bona</h2>
-            <div class="divider divider-primary my-2"></div>
-            <p class="prose text-base-100 text-lg">
-              Wir treffen uns jeden Mittwoch ab 21 Uhr auf unserem Verbindungshaus in der
-              Schustergasse 14 in Passau. Wir laden alle, Damen und Herren, herzlich ein, ein paar schöne Stunden mit
-              uns zu verbringen.
-            </p>
-          </div>
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-base-100 rounded-lg text-center">
+        <div class="max-w-lg" data-aos="fade-down">
+          <h1 class="mb-3 text-5xl font-bold">Oeno Danubia im CV zu Passau</h1>
+          <h2 class="text-xl font-semibold">Bono consilia - opera bona</h2>
+          <div class="divider divider-primary my-2"></div>
+          <p class="prose text-base-100 text-lg">
+            Wir treffen uns jeden Mittwoch ab 21 Uhr auf unserem Verbindungshaus in der
+            Schustergasse 14 in Passau. Wir laden alle, Damen und Herren, herzlich ein, ein paar schöne Stunden mit
+            uns zu verbringen.
+          </p>
+        </div>
       </div>
     </div>
 
 
     <!-- Section 2 -->
     <section class="min-h-screen flex flex-col bg-base text-base-content p-8">
-      <div class="flex flex-col items-center text-center rounded-lg bg-base-200 p-6 mb-8">
+      <div class="flex flex-col items-center text-center rounded-lg bg-base-200 p-6 mb-8" data-aos="zoom-in">
         <div class="badge badge-primary badge-lg">Benefits</div>
         <h2 class="text-base-content text-4xl font-bold">Was dich erwartet</h2>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-        <div class="card bg-base-100 text-base-content shadow-xl max-w-xl mx-auto">
+        <div class="card bg-base-100 text-base-content shadow-xl max-w-lg mx-auto" data-aos="zoom-in">
           <figure class="image-container">
             <img src="/public/Gruppe_Billiard.jpeg" alt="Gruppenbild" class="w-full h-56 object-cover rounded-t-lg">
           </figure>
@@ -36,7 +36,7 @@
               Ausgleich zum Studienalltag und knüpfst gleichzeitig wertvolle Kontakte.</p>
           </div>
         </div>
-        <div class="card bg-base-100 text-base-content shadow-xl max-w-xl mx-auto">
+        <div class="card bg-base-100 text-base-content shadow-xl max-w-lg mx-auto" data-aos="zoom-in">
           <figure class="image-container">
             <img src="/public/Fluss_Anstoßen.jpeg" alt="Anstoßen an der Donau"
               class="w-full h-56 object-cover rounded-t-lg">
@@ -49,7 +49,7 @@
               ein Netzwerk, das dich in jeder Situation unterstützt.</p>
           </div>
         </div>
-        <div class="card bg-base-100 text-base-content shadow-xl max-w-xl mx-auto">
+        <div class="card bg-base-100 text-base-content shadow-xl max-w-lg mx-auto" data-aos="zoom-in">
           <figure class="image-container">
             <img src="/public/Wappen_Flagge.jpg" alt="Auszeichnung vor Wappen"
               class="w-full h-56 object-cover rounded-t-lg">
@@ -67,40 +67,47 @@
 
     <!-- Section 3 -->
     <section class="min-h-screen flex flex-col bg-base-200 text-base-content p-8">
-      <div class="bg-base-100 flex flex-col items-center text-center rounded-lg p-8 mb-8">
-        <div class="badge badge-secondary badge-lg">FAQ</div>
-        <h2 class="text-4xl font-bold">Antworten auf deine Fragen</h2>
+  <div class="bg-base-100 flex flex-col items-center text-center rounded-lg p-8 mb-8" data-aos="zoom-out">
+    <div class="badge badge-secondary badge-lg">FAQ</div>
+    <h2 class="text-4xl font-bold">Antworten auf deine Fragen</h2>
+  </div>
+
+  <div class="flex flex-col items-center justify-center w-full max-w-4xl p-8 mx-auto">
+    <!-- First Question and Answer -->
+    <div class="flex items-center mb-8 prose xl:prose-lg w-full max-w-4xl" data-aos="zoom-out-left">
+      <div class="font-semibold text-xl w-2/5 pr-4">Was ist die Oeno-Danubia Passau?</div>
+      <div class="divider divider-horizontal divider-primary mx-4"></div>
+      <div class="pl-4 w-3/5">
+        <p>Die Oeno-Danubia Passau ist eine katholische, farbentragende und nichtschlagende Studentenverbindung an
+          der Universität Passau. Gegründet im Jahr 1899, setzt sie auf die Prinzipien religio, amicitia, scientia
+          und patria, die den Glauben, die Freundschaft, die Wissenschaft und die Vaterlandsliebe betonen.</p>
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
-        <details class="collapse">
-          <summary class="collapse-title bg-primary text-primary-content text-xl font-semibold">Was ist die Oeno-Danubia
-            Passau?</summary>
-          <div class="collapse-content bg-primary text-primary-content">
-            <p>Die Oeno-Danubia Passau ist eine katholische, farbentragende und nichtschlagende Studentenverbindung an
-              der Universität Passau. Gegründet im Jahr 1899, setzt sie auf die Prinzipien religio, amicitia, scientia
-              und patria, die den Glauben, die Freundschaft, die Wissenschaft und die Vaterlandsliebe betonen.</p>
-          </div>
-        </details>
-        <details class="collapse">
-          <summary class="collapse-title bg-primary text-primary-content text-xl font-semibold">Was bedeutet
-            "nichtschlagend"?</summary>
-          <div class="collapse-content bg-primary text-primary-content">
-            <p>"Nichtschlagend" bedeutet, dass die Mitglieder der Oeno-Danubia nicht an Mensuren (Fechtkämpfen)
-              teilnehmen. Stattdessen legt die Verbindung Wert auf andere Formen des Engagements und der
-              Gemeinschaftspflege.</p>
-          </div>
-        </details>
-        <details class="collapse">
-          <summary class="collapse-title bg-primary text-primary-content text-xl font-semibold">Wer kann Mitglied
-            werden?</summary>
-          <div class="collapse-content bg-primary text-primary-content">
-            <p>Mitglied der Oeno-Danubia kann jeder katholische Student oder Absolvent der Universität Passau werden,
-              der die Werte und Prinzipien der Verbindung teilt. Neue Mitglieder sind immer willkommen und werden durch
-              ein strukturiertes Aufnahmeverfahren eingeführt​.</p>
-          </div>
-        </details>
+    </div>
+
+    <!-- Second Question and Answer -->
+    <div class="flex items-center mb-8 prose xl:prose-lg w-full max-w-4xl" data-aos="zoom-out-right">
+      <div class="font-semibold text-xl w-2/5 pr-4">Was bedeutet "nichtschlagend"?</div>
+      <div class="divider divider-horizontal divider-secondary mx-4"></div>
+      <div class="pl-4 w-3/5">
+        <p>"Nichtschlagend" bedeutet, dass die Mitglieder der Oeno-Danubia nicht an Mensuren (Fechtkämpfen)
+          teilnehmen. Stattdessen legt die Verbindung Wert auf andere Formen des Engagements und der
+          Gemeinschaftspflege.</p>
       </div>
-    </section>
+    </div>
+
+    <!-- Third Question and Answer -->
+    <div class="flex items-center prose xl:prose-lg w-full max-w-4xl" data-aos="zoom-out-left">
+      <div class="font-semibold text-xl w-2/5 pr-4">Wer kann Mitglied werden?</div>
+      <div class="divider divider-horizontal divider-primary mx-4"></div>
+      <div class="pl-4 w-3/5">
+        <p>Mitglied der Oeno-Danubia kann jeder katholische Student oder Absolvent der Universität Passau werden,
+          der die Werte und Prinzipien der Verbindung teilt. Neue Mitglieder sind immer willkommen und werden
+          durch ein strukturiertes Aufnahmeverfahren eingeführt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
   </div>
 </template>
 
