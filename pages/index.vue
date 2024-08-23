@@ -118,13 +118,13 @@ onMounted(() => {
 
   // Array of background image URLs
   const images = [
-    '/carousel/Montur_Gruppe.png',
+    '/carousel/Donau.jpeg',
     '/carousel/Singen_Abend.png',
     '/carousel/Ausflug_Natur.jpg',
     '/carousel/Brücke.jpg',
-    '/carousel/Duo_Abend.jpg',
+    '/carousel/Donau.jpeg',
     '/carousel/Schnee_Wanderung.jpg',
-    '/carousel/Weltkarte.jpeg',
+    '/carousel/Bier_Fluss_2.jpeg',
     '/carousel/Zapfen.jpg',
   ];
 
