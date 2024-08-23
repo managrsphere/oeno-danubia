@@ -1,14 +1,19 @@
 <template>
     <div class="flex justify-center">
-        <div class="flex flex-col p-8 md:w-1/2">
-            <div class="prose xl:prose-lg">
-                <h1>Über uns</h1>
+        <div class="flex flex-col p-8 max-w-4xl mx-auto">
+            <div class="hero min-h-64 md:max-h-96 rounded-xl" id="hero-section">
+                <div class="hero-overlay bg-opacity-70 rounded-xl"></div>
+                <div class="hero-content text-center">
+                    <div class="max-w-md mx-auto">
+                        <h1 class="text-base-100 font-bold text-5xl">Über uns</h1>
+                    </div>
+                </div>
             </div>
+
             <div class="divider divider-primary"></div>
             <div class="flex flex-col">
                 <div class="p-6">
-                    <h2 class="text-2xl font-semibold">Geschichte</h2>
-                    <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mt-4">
+                    <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mt-4 mx-auto">
                         <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                             <li data-aos="zoom-in">
                                 <div class="timeline-middle">
@@ -187,9 +192,9 @@
                 </div>
             </div>
 
-            <div class="p-6 prose xl:prose-lg">
+            <div class="p-6 prose xl:prose-lg mx-auto">
                 <h2 class="text-2xl font-semibold" data-aos="zoom-in">Ziele und Prinzipien</h2>
-                <div class="prose xl:prose-lg text-primary-content" data-aos="zoom-in">
+                <div class="text-primary-content" data-aos="zoom-in">
                     <p>
                         Die Oeno-Danubia beruht auf den Prinzipien <span class="italic font-semibold">religio,
                             amicitia,
@@ -234,7 +239,7 @@
                 </div>
             </div>
 
-            <div class="p-6 prose xl:prose-lg">
+            <div class="p-6 prose xl:prose-lg mx-auto">
                 <h2 class="text-2xl font-semibold" data-aos="zoom-in">Wahlspruch, Wappen und Zirkel</h2>
                 <div data-aos="zoom-in">
                     <h3 class="text-xl">Wahlspruch</h3>
@@ -287,7 +292,7 @@
                 </div>
             </div>
 
-            <div class="p-6 prose xl:prose-lg">
+            <div class="p-6 prose xl:prose-lg mx-auto">
                 <h2 class="text-2xl font-semibold" data-aos="zoom-in">Unsere Ehrenmitglieder</h2>
                 <ul data-aos="zoom-in">
                     <li>
@@ -329,6 +334,11 @@
 </template>
 
 <script setup lang="ts">
+onMounted(() => {
+    const image = '/Montur_Gruppe.png';
+    const heroSection = document.getElementById('hero-section') as HTMLElement;
+    heroSection.style.backgroundImage = `url(${image})`;
+})
 </script>
 
 <style scoped></style>
