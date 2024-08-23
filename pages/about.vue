@@ -1,4 +1,10 @@
 <template>
+    <div class="btn btn-circle btn-base-300 fixed bottom-12 right-12 p-2 shadow-lg transition-opacity duration-300 z-10" v-show="showScrollButton" @click="scrollToTop">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="m11 7.825l-4.9 4.9q-.3.3-.7.288t-.7-.313q-.275-.3-.288-.7t.288-.7l6.6-6.6q.15-.15.325-.212T12 4.425t.375.063t.325.212l6.6 6.6q.275.275.275.688t-.275.712q-.3.3-.712.3t-.713-.3L13 7.825V19q0 .425-.288.713T12 20t-.712-.288T11 19z" />
+        </svg>
+    </div>
     <div class="flex justify-center">
         <div class="flex flex-col p-8 max-w-4xl mx-auto">
             <div class="hero min-h-64 md:max-h-96 rounded-xl" id="hero-section">
@@ -27,7 +33,8 @@
                                 <div class="timeline-start mb-10 md:text-end">
                                     <time class="font-mono italic">1899</time>
                                     <div class="text-lg font-black">Erste Gründung</div>
-                                    <p>Die freie Katholische Studentenvereinigung Oeno-Danubia wird durch Studenten
+                                    <p class="prose xl:prose-lg">Die freie Katholische Studentenvereinigung Oeno-Danubia
+                                        wird durch Studenten
                                         des Passauer Lyzeums am 11. Februar gegründet, ihre Satzung wird inhaltlich
                                         an
                                         jede der
@@ -52,7 +59,8 @@
                                 <div class="timeline-end mb-10">
                                     <time class="font-mono italic">1911</time>
                                     <div class="text-lg font-black">Auflösung</div>
-                                    <p>Aus bislang unbekannten Gründen wird die Vereinigung aufgelöst.</p>
+                                    <p class="prose xl:prose-lg">Aus bislang unbekannten Gründen wird die Vereinigung
+                                        aufgelöst.</p>
                                 </div>
                                 <hr />
                             </li>
@@ -69,7 +77,7 @@
                                 <div class="timeline-start mb-10 md:text-end">
                                     <time class="font-mono italic">1923</time>
                                     <div class="text-lg font-black">Neugründung</div>
-                                    <p>
+                                    <p class="prose xl:prose-lg">
                                         Im Zuge der
                                         Umwandlung des Lyzeums in eine Philosophisch-Theologische
                                         Hochschule gründet sich die
@@ -90,7 +98,7 @@
                                 <div class="timeline-end mb-10">
                                     <time class="font-mono italic">1925</time>
                                     <div class="text-lg font-black">De-facto-Auflösung</div>
-                                    <p>Erneut kommt es zu einer
+                                    <p class="prose xl:prose-lg">Erneut kommt es zu einer
                                         De-facto-Auflösung durch den Regens des Seminars.</p>
                                 </div>
                                 <hr />
@@ -108,7 +116,8 @@
                                 <div class="timeline-start mb-10 md:text-end">
                                     <time class="font-mono italic">1978</time>
                                     <div class="text-lg font-black">Gründung einer neuen Verbindung</div>
-                                    <p>Nachdem im Jahr 1978 die Universität Passau gegründet wird, beschließt der
+                                    <p class="prose xl:prose-lg">Nachdem im Jahr 1978 die Universität Passau gegründet
+                                        wird, beschließt der
                                         Philisterzirkel
                                         "Inn-Donau"
                                         unter
@@ -130,7 +139,8 @@
                                 <div class="timeline-end mb-10">
                                     <time class="font-mono italic">1979</time>
                                     <div class="text-lg font-black">Gründungskonvent</div>
-                                    <p>Im Passauer Hotel "Weißer Hase" wird am 20. Februar ein Gründungsconvent
+                                    <p class="prose xl:prose-lg">Im Passauer Hotel "Weißer Hase" wird am 20. Februar ein
+                                        Gründungsconvent
                                         abgehalten,
                                         der Symbolik und Farben der
                                         Ur-Oeno-Danubia
@@ -160,7 +170,8 @@
                                 <div class="timeline-start mb-10 md:text-end">
                                     <time class="font-mono italic">1981</time>
                                     <div class="text-lg font-black">Einweihung des Verbindungshauses</div>
-                                    <p>Das Oeno-Danuben-Gewölbe in der Schustergasse wird eingeweiht, das der
+                                    <p class="prose xl:prose-lg">Das Oeno-Danuben-Gewölbe in der Schustergasse wird
+                                        eingeweiht, das der
                                         Verbindung
                                         bis heute als
                                         Verbindungshaus dient.</p>
@@ -180,7 +191,8 @@
                                 <div class="timeline-end mb-10">
                                     <time class="font-mono italic">2000/2001</time>
                                     <div class="text-lg font-black">Gründungskonvent</div>
-                                    <p>Zusammen mit der K.D.St.V. Rupertia Regensburg und der K.D.St.V Agilolfia
+                                    <p class="prose xl:prose-lg">Zusammen mit der K.D.St.V. Rupertia Regensburg und der
+                                        K.D.St.V Agilolfia
                                         Freising
                                         stellt die
                                         Oeno-Danubia den Vorort und richtet die Cartellversammlung aus.</p>
@@ -335,10 +347,28 @@
 
 <script setup lang="ts">
 onMounted(() => {
+    window.addEventListener('scroll', handleScroll);
+
     const image = '/Montur_Gruppe.png';
     const heroSection = document.getElementById('hero-section') as HTMLElement;
     heroSection.style.backgroundImage = `url(${image})`;
-})
+});
+
+onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll);
+});
+
+const showScrollButton = ref(false);
+
+const handleScroll = () => {
+    showScrollButton.value = window.scrollY > 100;
+};
+
+const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+
 </script>
 
 <style scoped></style>
