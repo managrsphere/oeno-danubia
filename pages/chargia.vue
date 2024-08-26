@@ -17,7 +17,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-6">
                 <div class="card card-compact bg-base-200 shadow-xl">
                     <figure>
-                        <img src="" alt="">
+                        <img src="/UserDummy.png" alt="">
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Senior</h2>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="card card-compact bg-base-200 shadow-xl">
                     <figure>
-                        <img src="" alt="">
+                        <img src="/UserDummy.png" alt="">
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Consenior</h2>
@@ -35,7 +35,7 @@
                 </div>
                 <div class="card card-compact bg-base-200 shadow-xl">
                     <figure>
-                        <img src="" alt="">
+                        <img src="/UserDummy.png" alt="">
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Fuxmajor</h2>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="card card-compact bg-base-200 shadow-xl">
                     <figure>
-                        <img src="" alt="">
+                        <img src="/UserDummy.png" alt="">
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Scriptor</h2>
@@ -53,7 +53,7 @@
                 </div>
                 <div class="card card-compact bg-base-200 shadow-xl">
                     <figure>
-                        <img src="" alt="">
+                        <img src="/UserDummy.png" alt="">
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Quaestor</h2>
@@ -67,7 +67,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 <div class="card card-compact bg-base-200 shadow-xl">
                     <figure>
-                        <img src="" alt="">
+                        <img src="/UserDummy.png" alt="">
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Philistersenior</h2>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="card card-compact bg-base-200 shadow-xl">
                     <figure>
-                        <img src="" alt="">
+                        <img src="/UserDummy.png" alt="">
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Philisterconsenior</h2>
@@ -85,7 +85,7 @@
                 </div>
                 <div class="card card-compact bg-base-200 shadow-xl">
                     <figure>
-                        <img src="" alt="">
+                        <img src="/UserDummy.png" alt="">
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Philisterscriptor</h2>
@@ -94,7 +94,7 @@
                 </div>
                 <div class="card card-compact bg-base-200 shadow-xl">
                     <figure>
-                        <img src="" alt="">
+                        <img src="/UserDummy.png" alt="">
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Philisterquaestor</h2>
