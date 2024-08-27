@@ -11,6 +11,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@nuxtjs/seo": "^2.0.0-rc.19",
     "@nuxtjs/tailwindcss": "^6.12.0",
     "@tailwindcss/typography": "^0.5.13",
     "daisyui": "^4.12.2",

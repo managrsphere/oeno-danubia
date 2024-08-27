@@ -73,7 +73,7 @@
 
   <div class="flex flex-col items-center justify-center w-full max-w-4xl p-8 mx-auto">
     <!-- First Question and Answer -->
-    <div class="flex items-center mb-8 prose xl:prose-lg w-full max-w-4xl" data-aos="zoom-out-left">
+    <div class="flex items-center mb-8 prose xl:prose-lg w-full max-w-4xl" data-aos="zoom-in">
       <div class="font-semibold text-xl w-2/5 pr-4">Was ist die Oeno-Danubia Passau?</div>
       <div class="divider divider-horizontal divider-primary mx-4"></div>
       <div class="pl-4 w-3/5">
@@ -84,7 +84,7 @@
     </div>
 
     <!-- Second Question and Answer -->
-    <div class="flex items-center mb-8 prose xl:prose-lg w-full max-w-4xl" data-aos="zoom-out-right">
+    <div class="flex items-center mb-8 prose xl:prose-lg w-full max-w-4xl" data-aos="zoom-in">
       <div class="font-semibold text-xl w-2/5 pr-4">Was bedeutet nicht-schlagend?</div>
       <div class="divider divider-horizontal divider-secondary mx-4"></div>
       <div class="pl-4 w-3/5">
@@ -95,7 +95,7 @@
     </div>
 
     <!-- Third Question and Answer -->
-    <div class="flex items-center prose xl:prose-lg w-full max-w-4xl" data-aos="zoom-out-left">
+    <div class="flex items-center prose xl:prose-lg w-full max-w-4xl" data-aos="zoom-in">
       <div class="font-semibold text-xl w-2/5 pr-4">Wer kann Mitglied werden?</div>
       <div class="divider divider-horizontal divider-primary mx-4"></div>
       <div class="pl-4 w-3/5">
