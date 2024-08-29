@@ -1,17 +1,15 @@
 <template>
   <div class="flex flex-col">
-  
+
     <div class="hero min-h-screen" id="hero-section">
       <div class="hero-overlay bg-opacity-60"></div>
       <div class="hero-content text-base-100 text-center">
         <div class="max-w-lg" data-aos="fade-down">
-          <h1 class="mb-3 text-5xl font-bold">Oeno Danubia im CV zu Passau</h1>
-          <h2 class="text-xl font-semibold">Bono consilia - opera bona</h2>
+          <h1 class="mb-3 text-5xl font-bold">{{ page.layout[0]?.content }}</h1>
+          <h2 class="text-xl font-semibold">{{ page.layout[1]?.content }}</h2>
           <div class="divider divider-primary my-2"></div>
           <p class="prose text-base-100 text-lg">
-            Wir treffen uns jeden Mittwoch ab 21 Uhr auf unserem Verbindungshaus in der
-            Schustergasse 14 in Passau. Wir laden alle, Damen und Herren, herzlich ein, ein paar schöne Stunden mit
-            uns zu verbringen.
+            {{ page.layout[2]?.content }}
           </p>
         </div>
       </div>
@@ -20,8 +18,8 @@
     <!-- Section 2 -->
     <section class="min-h-screen flex flex-col bg-base text-base-content p-8">
       <div class="flex flex-col items-center text-center rounded-lg bg-base-200 p-6 mb-8" data-aos="zoom-in">
-        <div class="badge badge-primary badge-lg">Benefits</div>
-        <h2 class="text-base-content text-4xl font-bold">Was dich erwartet</h2>
+        <div class="badge badge-primary badge-lg">{{ page.layout[3]?.content }}</div>
+        <h2 class="text-base-content text-4xl font-bold">{{ page.layout[4]?.content }}</h2>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <div class="card bg-base-100 text-base-content shadow-xl max-w-lg mx-auto" data-aos="zoom-in">
@@ -29,10 +27,8 @@
             <img src="/public/Gruppe_Billiard.jpeg" alt="Gruppenbild" class="w-full h-56 object-cover rounded-t-lg">
           </figure>
           <div class="card-body">
-            <h3 class="text-xl font-semibold">Unvergessliche Abende</h3>
-            <p>Unsere Studentenverbindung bietet ein breites Spektrum an Abendaktivitäten, die von entspannten
-              Spieleabenden über spannende Vorträge bis hin zu geselligen Feiern reichen. Hier findest du den perfekten
-              Ausgleich zum Studienalltag und knüpfst gleichzeitig wertvolle Kontakte.</p>
+            <h3 class="text-xl font-semibold">{{ page.layout[6]?.content }}</h3>
+            <p>{{ page.layout[7]?.content }}</p>
           </div>
         </div>
         <div class="card bg-base-100 text-base-content shadow-xl max-w-lg mx-auto" data-aos="zoom-in">
@@ -41,11 +37,8 @@
               class="w-full h-56 object-cover rounded-t-lg">
           </figure>
           <div class="card-body">
-            <h3 class="text-xl font-semibold">Gemeinschaft und Zusammenhalt</h3>
-            <p>In unserer Verbindung steht die Gemeinschaft an erster Stelle. Wir pflegen ein freundschaftliches und
-              unterstützendes Miteinander, bei dem jeder willkommen ist. Ob bei gemeinsamen Ausflügen, sportlichen
-              Aktivitäten oder einfach nur beim gemütlichen Beisammensein – bei uns findest du Freunde fürs Leben und
-              ein Netzwerk, das dich in jeder Situation unterstützt.</p>
+            <h3 class="text-xl font-semibold">{{ page.layout[9]?.content }}</h3>
+            <p>{{ page.layout[10]?.content }}</p>
           </div>
         </div>
         <div class="card bg-base-100 text-base-content shadow-xl max-w-lg mx-auto" data-aos="zoom-in">
@@ -54,11 +47,8 @@
               class="w-full h-56 object-cover rounded-t-lg">
           </figure>
           <div class="card-body">
-            <h3 class="text-xl font-semibold">Unterstützung im Studium</h3>
-            <p>Unser Ziel ist es, dich nicht nur gesellschaftlich, sondern auch akademisch zu fördern. Bei uns
-              profitierst du von einem starken Netzwerk aus erfahrenen Mitgliedern und Alumnis, die dir mit Rat und Tat
-              zur Seite stehen. Ob bei der Prüfungsvorbereitung, der Suche nach Praktika oder dem Austausch von
-              Lernmaterialien – wir unterstützen uns gegenseitig und sorgen gemeinsam für Erfolg im Studium.</p>
+            <h3 class="text-xl font-semibold">{{ page.layout[11]?.content }}</h3>
+            <p>{{ page.layout[12]?.content }}</p>
           </div>
         </div>
       </div>
@@ -66,55 +56,79 @@
 
     <!-- Section 3 -->
     <section class="min-h-screen flex flex-col bg-base-200 text-base-content p-8">
-  <div class="bg-base-100 flex flex-col items-center text-center rounded-lg p-8 mb-8" data-aos="zoom-in">
-    <div class="badge badge-secondary badge-lg">FAQ</div>
-    <h2 class="text-4xl font-bold">Antworten auf deine Fragen</h2>
-  </div>
-
-  <div class="flex flex-col items-center justify-center w-full max-w-4xl p-8 mx-auto">
-    <!-- First Question and Answer -->
-    <div class="flex items-center mb-8 prose xl:prose-lg w-full max-w-4xl" data-aos="zoom-in">
-      <div class="font-semibold text-xl w-2/5 pr-4">Was ist die Oeno-Danubia Passau?</div>
-      <div class="divider divider-horizontal divider-primary mx-4"></div>
-      <div class="pl-4 w-3/5">
-        <p>Die Oeno-Danubia Passau ist eine katholische, farbentragende und nichtschlagende Studentenverbindung an
-          der Universität Passau. Gegründet im Jahr 1899, setzt sie auf die Prinzipien religio, amicitia, scientia
-          und patria, die den Glauben, die Freundschaft, die Wissenschaft und die Vaterlandsliebe betonen.</p>
+      <div class="bg-base-100 flex flex-col items-center text-center rounded-lg p-8 mb-8" data-aos="zoom-in">
+        <div class="badge badge-secondary badge-lg">{{ page.layout[13]?.content }}</div>
+        <h2 class="text-4xl font-bold">{{ page.layout[14]?.content }}</h2>
       </div>
-    </div>
 
-    <!-- Second Question and Answer -->
-    <div class="flex items-center mb-8 prose xl:prose-lg w-full max-w-4xl" data-aos="zoom-in">
-      <div class="font-semibold text-xl w-2/5 pr-4">Was bedeutet nicht-schlagend?</div>
-      <div class="divider divider-horizontal divider-secondary mx-4"></div>
-      <div class="pl-4 w-3/5">
-        <p>Nicht-schlagend bedeutet, dass die Mitglieder der Oeno-Danubia nicht an Mensuren (Fechtkämpfen)
-          teilnehmen. Stattdessen legt die Verbindung Wert auf andere Formen des Engagements und der
-          Gemeinschaftspflege.</p>
-      </div>
-    </div>
+      <div class="flex flex-col items-center justify-center w-full max-w-4xl p-8 mx-auto">
+        <!-- First Question and Answer -->
+        <div class="flex items-center mb-8 prose xl:prose-lg w-full max-w-4xl" data-aos="zoom-in">
+          <div class="font-semibold text-xl w-2/5 pr-4">{{ page.layout[15]?.content }}</div>
+          <div class="divider divider-horizontal divider-primary mx-4"></div>
+          <div class="pl-4 w-3/5">
+            <p>{{ page.layout[16]?.content }}</p>
+          </div>
+        </div>
 
-    <!-- Third Question and Answer -->
-    <div class="flex items-center prose xl:prose-lg w-full max-w-4xl" data-aos="zoom-in">
-      <div class="font-semibold text-xl w-2/5 pr-4">Wer kann Mitglied werden?</div>
-      <div class="divider divider-horizontal divider-primary mx-4"></div>
-      <div class="pl-4 w-3/5">
-        <p>Mitglied der Oeno-Danubia kann jeder katholische Student oder Absolvent der Universität Passau werden,
-          der die Werte und Prinzipien der Verbindung teilt. Neue Mitglieder sind immer willkommen und werden
-          durch ein strukturiertes Aufnahmeverfahren eingeführt.</p>
+        <!-- Second Question and Answer -->
+        <div class="flex items-center mb-8 prose xl:prose-lg w-full max-w-4xl" data-aos="zoom-in">
+          <div class="font-semibold text-xl w-2/5 pr-4">{{ page.layout[17]?.content }}</div>
+          <div class="divider divider-horizontal divider-secondary mx-4"></div>
+          <div class="pl-4 w-3/5">
+            <p>{{ page.layout[18]?.content }}</p>
+          </div>
+        </div>
+
+        <!-- Third Question and Answer -->
+        <div class="flex items-center prose xl:prose-lg w-full max-w-4xl" data-aos="zoom-in">
+          <div class="font-semibold text-xl w-2/5 pr-4">{{ page.layout[19]?.content }}</div>
+          <div class="divider divider-horizontal divider-primary mx-4"></div>
+          <div class="pl-4 w-3/5">
+            <p>{{ page.layout[20]?.content }}</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
   </div>
 </template>
 
 <script setup lang="ts">
-onMounted(() => {
+import axios from 'axios';
+
+const page = ref({
+  clientId: 2,
+  pageId: 1,
+  layout: []
+}
+);
+
+async function getPageData() {
+  try {
+    // Fetch data from the API using pageId
+    const res = await axios.get(`http://localhost:3000/page/${page.value.pageId}`);
+
+    // Log the response data to inspect its structure
+    console.log('API Response:', res.data);
+
+    // Ensure that the fetched data has a layout property and it is an array
+    if (res.data && res.data.page &&Array.isArray(res.data.page.layout)) {
+      page.value = res.data.page; // Correctly assign the data to page.value
+      console.log('Page Data Assigned:', page.value); // Log the updated page value
+    } else {
+      console.warn('Layout is missing or not an array in the response:', res.data);
+    }
+  } catch (error) {
+    console.error('Error fetching page data:', error);
+  }
+}
+
+  onMounted(() => {
+
   const interval = 5000; // 5 seconds for smoother transitions
   let index = 0;
-
+  
   // Array of background image URLs
   const images = [
     '/carousel/Bier_Fluss_2.jpeg',
@@ -126,15 +140,15 @@ onMounted(() => {
     '/carousel/Schnee_Wanderung.jpg',
     '/carousel/Zapfen.jpg',
   ];
-
+  
   const heroSection = document.getElementById('hero-section') as HTMLElement;
-
+  
   // Preload images
   images.forEach((src) => {
     const img = new Image();
     img.src = src;
   });
-
+  
   const cycleBackground = () => {
     if (!heroSection) return;
     heroSection.style.backgroundImage = `url(${images[index]})`;
@@ -144,9 +158,10 @@ onMounted(() => {
     }, 100); // Short delay to trigger the fade effect
     index = (index + 1) % images.length; // Loop through the images
   };
-
+  
   setInterval(cycleBackground, interval); // Change background every 5 seconds
   cycleBackground(); // Initialize with the first background
+  getPageData();
 });
 </script>
 
