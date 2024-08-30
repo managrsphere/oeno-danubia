@@ -47,8 +47,8 @@
               class="w-full h-56 object-cover rounded-t-lg">
           </figure>
           <div class="card-body">
-            <h3 class="text-xl font-semibold">{{ page.layout[11]?.content }}</h3>
-            <p>{{ page.layout[12]?.content }}</p>
+            <h3 class="text-xl font-semibold">{{ page.layout[12]?.content }}</h3>
+            <p>{{ page.layout[13]?.content }}</p>
           </div>
         </div>
       </div>
@@ -57,35 +57,35 @@
     <!-- Section 3 -->
     <section class="min-h-screen flex flex-col bg-base-200 text-base-content p-8">
       <div class="bg-base-100 flex flex-col items-center text-center rounded-lg p-8 mb-8" data-aos="zoom-in">
-        <div class="badge badge-secondary badge-lg">{{ page.layout[13]?.content }}</div>
-        <h2 class="text-4xl font-bold">{{ page.layout[14]?.content }}</h2>
+        <div class="badge badge-secondary badge-lg">{{ page.layout[14]?.content }}</div>
+        <h2 class="text-4xl font-bold">{{ page.layout[15]?.content }}</h2>
       </div>
 
       <div class="flex flex-col items-center justify-center w-full max-w-4xl p-8 mx-auto">
         <!-- First Question and Answer -->
         <div class="flex items-center mb-8 prose xl:prose-lg w-full max-w-4xl" data-aos="zoom-in">
-          <div class="font-semibold text-xl w-2/5 pr-4">{{ page.layout[15]?.content }}</div>
+          <div class="font-semibold text-xl w-2/5 pr-4">{{ page.layout[16]?.content }}</div>
           <div class="divider divider-horizontal divider-primary mx-4"></div>
           <div class="pl-4 w-3/5">
-            <p>{{ page.layout[16]?.content }}</p>
+            <p>{{ page.layout[17]?.content }}</p>
           </div>
         </div>
 
         <!-- Second Question and Answer -->
         <div class="flex items-center mb-8 prose xl:prose-lg w-full max-w-4xl" data-aos="zoom-in">
-          <div class="font-semibold text-xl w-2/5 pr-4">{{ page.layout[17]?.content }}</div>
+          <div class="font-semibold text-xl w-2/5 pr-4">{{ page.layout[18]?.content }}</div>
           <div class="divider divider-horizontal divider-secondary mx-4"></div>
           <div class="pl-4 w-3/5">
-            <p>{{ page.layout[18]?.content }}</p>
+            <p>{{ page.layout[19]?.content }}</p>
           </div>
         </div>
 
         <!-- Third Question and Answer -->
         <div class="flex items-center prose xl:prose-lg w-full max-w-4xl" data-aos="zoom-in">
-          <div class="font-semibold text-xl w-2/5 pr-4">{{ page.layout[19]?.content }}</div>
+          <div class="font-semibold text-xl w-2/5 pr-4">{{ page.layout[20]?.content }}</div>
           <div class="divider divider-horizontal divider-primary mx-4"></div>
           <div class="pl-4 w-3/5">
-            <p>{{ page.layout[20]?.content }}</p>
+            <p>{{ page.layout[21]?.content }}</p>
           </div>
         </div>
       </div>
@@ -98,22 +98,29 @@
 import axios from 'axios';
 
 const page = ref({
+  _id: '66d17ca0a241519bf04e2f43',
   clientId: 2,
   pageId: 1,
-  layout: []
+  layout: [
+    {
+      type: '',
+      name: '',
+      content: ''
+    }
+  ]
 }
 );
 
 async function getPageData() {
   try {
     // Fetch data from the API using pageId
-    const res = await axios.get(`http://localhost:3000/page/${page.value.pageId}`);
+    const res = await axios.get(`http://localhost:3000/page/${page.value._id}`);
 
     // Log the response data to inspect its structure
     console.log('API Response:', res.data);
 
     // Ensure that the fetched data has a layout property and it is an array
-    if (res.data && res.data.page &&Array.isArray(res.data.page.layout)) {
+    if (res.data && res.data.page && Array.isArray(res.data.page.layout)) {
       page.value = res.data.page; // Correctly assign the data to page.value
       console.log('Page Data Assigned:', page.value); // Log the updated page value
     } else {
@@ -124,11 +131,11 @@ async function getPageData() {
   }
 }
 
-  onMounted(() => {
+onMounted(() => {
 
   const interval = 5000; // 5 seconds for smoother transitions
   let index = 0;
-  
+
   // Array of background image URLs
   const images = [
     '/carousel/Bier_Fluss_2.jpeg',
@@ -140,15 +147,15 @@ async function getPageData() {
     '/carousel/Schnee_Wanderung.jpg',
     '/carousel/Zapfen.jpg',
   ];
-  
+
   const heroSection = document.getElementById('hero-section') as HTMLElement;
-  
+
   // Preload images
   images.forEach((src) => {
     const img = new Image();
     img.src = src;
   });
-  
+
   const cycleBackground = () => {
     if (!heroSection) return;
     heroSection.style.backgroundImage = `url(${images[index]})`;
@@ -158,7 +165,7 @@ async function getPageData() {
     }, 100); // Short delay to trigger the fade effect
     index = (index + 1) % images.length; // Loop through the images
   };
-  
+
   setInterval(cycleBackground, interval); // Change background every 5 seconds
   cycleBackground(); // Initialize with the first background
   getPageData();
