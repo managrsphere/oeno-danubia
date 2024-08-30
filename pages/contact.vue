@@ -5,17 +5,17 @@
                 <div class="hero-overlay bg-opacity-70 rounded-xl"></div>
                 <div class="hero-content text-center">
                     <div class="max-w-md mx-auto">
-                        <h1 class="text-base-100 font-bold text-5xl">Kontakt</h1>
+                        <h1 class="text-base-100 font-bold text-5xl">{{ page.layout[0]?.content }}</h1>
                     </div>
                 </div>
             </div>
             <div class="divider divider-secondary"></div>
             <div class="flex flex-col md:flex-row gap-4">
                 <div class="p-6 prose xl:prose-lg mx-auto bg-base-200 rounded-lg w-full">
-                    <h2 class="text-2xl font-semibold" data-aos="zoom-in">Kontaktinformationen</h2>
-                    <p><span class="font-semibold">Adresse: </span>Schustergasse 14, 94032 Passau</p>
-                    <p><span class="font-semibold">Telefon: </span>+49 851 31614</p>
-                    <p><span class="font-semibold">E-Mail: </span>senior@oenodanubia.de</p>
+                    <h2 class="text-2xl font-semibold" data-aos="zoom-in">{{ page.layout[1]?.content }}</h2>
+                    <p><span class="font-semibold">{{ page.layout[2]?.content }}</span>{{ page.layout[3]?.content }}</p>
+                    <p><span class="font-semibold">{{ page.layout[4]?.content }}</span>{{ page.layout[5]?.content }}</p>
+                    <p><span class="font-semibold">{{ page.layout[6]?.content }}</span>{{ page.layout[7]?.content }}</p>
                 </div>
                 <div class="p-6 prose xl:prose-lg mx-auto bg-base-200 rounded-lg w-full">
                     <h2 class="text-2xl font-semibold" data-aos="zoom-in">Hier findest du uns</h2>
@@ -31,10 +31,49 @@
 </template>
 
 <script setup lang="ts">
+import axios from 'axios';
+
+const page = ref({
+  _id: '66d1acd6a241519bf04e3269',
+  clientId: 2,
+  pageId: 5,
+  layout: [
+    {
+      type: '',
+      name: '',
+      content: ''
+    }
+  ]
+}
+);
+
+async function getPageData() {
+  try {
+    // Fetch data from the API using pageId
+    const res = await axios.get(`http://localhost:3000/page/${page.value._id}`);
+
+    // Log the response data to inspect its structure
+    console.log('API Response:', res.data);
+
+    // Ensure that the fetched data has a layout property and it is an array
+    if (res.data && res.data.page && Array.isArray(res.data.page.layout)) {
+      page.value = res.data.page; // Correctly assign the data to page.value
+      console.log('Page Data Assigned:', page.value); // Log the updated page value
+    } else {
+      console.warn('Layout is missing or not an array in the response:', res.data);
+    }
+  } catch (error) {
+    console.error('Error fetching page data:', error);
+  }
+}
+
+
 onMounted(() => {
     const image = '/carousel/Bier_Fluss_2.jpeg';
     const heroSection = document.getElementById('hero-section') as HTMLElement;
     heroSection.style.backgroundImage = `url(${image})`;
+
+    getPageData();
 })
 </script>
 
